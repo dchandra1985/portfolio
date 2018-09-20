@@ -1,15 +1,14 @@
 ---
 layout: page
-title: About
+title: About Me
 sidebar_link: true
 sidebar_sort_order: 70
 google_analytics: 
 ---
 
+# Welcome!
 
-<div class="left-col">
-    <img src="_screenshots/3.png">
-</div>
+<img src="_screenshots/dinesh.png">
 
 <div class="right-col">
     <p>Thanks for visiting my personal technology blog</p>
