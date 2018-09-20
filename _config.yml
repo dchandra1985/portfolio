@@ -3,7 +3,7 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Machine Learning & Statistics
+title:            Data Science
 tagline:          'A Jekyll theme'
 description:      'Blog by Dinesh Chandrasekaran'
 url:              https://dchandra1985.github.io
