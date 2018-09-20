@@ -27,22 +27,7 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - Makefile
-  - README.md
-  - .gitignore
 
-#permalink:        /:year/:month/:day/:title.html
-
-defaults:
-  - scope:
-      path: "_posts"
-      type: "posts"
-    values:
-      excerpt_separator:  <!--more-->
-      layout: post
 
 # Sidebar link settings
 sidebar_home_link:  true
