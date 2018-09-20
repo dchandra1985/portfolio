@@ -34,7 +34,7 @@ exclude:
   - README.md
   - .gitignore
 
-permalink:        /:year/:month/:day/:title.html
+#permalink:        /:year/:month/:day/:title.html
 
 defaults:
   - scope:
