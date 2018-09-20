@@ -8,7 +8,7 @@ google_analytics:
 
 # Welcome!
 
-<img src="_screenshots/dinesh.png">
+<img src="screenshots/dinesh.png">
 
 <div class="right-col">
     <p>Thanks for visiting my personal technology blog</p>
