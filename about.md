@@ -7,6 +7,6 @@ sidebar_sort_order: 70
 
 # Welcome!
 
-<img src="images/dinesh.jpeg">
+<img src="images/dinesh.png">
 
 
