@@ -22,7 +22,7 @@ sidebar_sort_order: 70
 
     <p>I have been learning and practicing data science for past few years and thought I would share my experiences along the way as I recap what I have learnt to help solidify what I learn and keep track of my progress. This blog will keep my learning structured and help keep me focused. Hopefully it will also be of some use to anyone new to data science as I share any useful resources I come accross.</p>
 
-    <p>For further details on machine learning and statistics contents, please visit the repository on <a href="https://github.com/dchandra1985">Github</a></p>
+    <p>For further details and contents, please visit the repository on <a href="https://github.com/dchandra1985">Github</a></p>
     
     <p>Contact me @ <a href="https://www.linkedin.com/in/dinesh-chandrasekaran-49731b15/">linkedin</a></p>
 </div>
