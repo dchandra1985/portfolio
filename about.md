@@ -8,7 +8,7 @@ google_analytics:
 
 
 <div class="left-col">
-    <img src="uploads/0.jpeg">
+    <img src="_screenshots/dinesh.png">
 </div>
 
 <div class="right-col">
