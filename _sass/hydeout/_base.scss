@@ -62,6 +62,7 @@ table {
   font-size: 85%;
   border: 1px solid $border-color;
   border-collapse: collapse;
+  overflow: auto;
 }
 
 td,
