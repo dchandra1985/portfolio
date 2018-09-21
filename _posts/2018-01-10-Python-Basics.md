@@ -64,23 +64,9 @@ visual.head(5)
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<table>
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>country</th>
       <th>year</th>
@@ -156,7 +142,7 @@ visual.head(5)
     </tr>
   </tbody>
 </table>
-</div>
+
 
 
 
@@ -172,7 +158,7 @@ plt.title('scatter Plot',fontweight="bold",fontsize = 20)
 plt.show()
 ```
 
-![png](/images/output_5_1.png)
+![placeholder](/images/output_5_1.png)
 
 
 
