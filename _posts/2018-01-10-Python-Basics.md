@@ -178,7 +178,7 @@ plt.show()
 ```
 
 
-![png](images/output_5_1.png)
+![png](/images/output_5_1.png)
 
 
 
@@ -213,7 +213,7 @@ plt.title('Box Plot',fontweight = 'bold',fontsize = 20 )
 
 
 
-![png](images/output_7_1.png)
+![png](/images/output_7_1.png)
 
 
 
@@ -233,7 +233,7 @@ plt.show()
 ```
 
 
-![png](images/output_8_0.png)
+![png](/images/output_8_0.png)
 
 
 
@@ -321,7 +321,7 @@ plt.subplot(1,2,2); smoking.smoker.value_counts().plot(kind='pie',colors=['C2','
 ```
 
 
-![png](images/output_16_1.png)
+![png](/images/output_16_1.png)
 
 
 
@@ -332,4 +332,4 @@ plt.ylabel('Percentage')
 ```
 
 
-![png](images/output_17_1.png)
+![png](/images/output_17_1.png)
