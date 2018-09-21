@@ -4,13 +4,8 @@ title: "Python Basics"
 categories:
   - Machine Learning
 tags:
-  - algorithm
   - python
-  - supervised learning
-  - unsupervised learning
-  - regression
-  - classification
-  - clustering
+  - visualization
 
 last_modified_at: 2018-01-10
 excerpt_separator: <!-- more -->
@@ -177,8 +172,7 @@ plt.title('scatter Plot',fontweight="bold",fontsize = 20)
 plt.show()
 ```
 
-images:
-  - image_path: images/output_5_1.png
+![png](/images/output_5_1.png)
 
 
 
