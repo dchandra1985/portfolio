@@ -158,7 +158,8 @@ plt.title('scatter Plot',fontweight="bold",fontsize = 20)
 plt.show()
 ```
 
-![placeholder](/images/output_5_1.png)
+
+ <img src="images/output_5_1.png">
 
 
 
