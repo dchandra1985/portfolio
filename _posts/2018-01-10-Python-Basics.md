@@ -162,25 +162,6 @@ plt.show()
 
 ![]({{"/images/output_5_1.png"|absolute_url}})
 
-![img](/img/output_5_1.png)
-
-![img](images/output_5_1.png)
-
-![img](/_screenshots/1.png)
-
-
-<img src="img/output_5_1.png">
-
-![Desktop](/_screenshots/1.png?raw=true)
-<img alt="Mobile home page" src="/_screenshots/2.png?raw=true" width="300px" />
-
-
-<br>Setting up the environment
-<br>![img](https://github.com/dchandra1985/portfolio/blob/gh-pages/images/output_5_1.png)
-
-
-
-
 
 
 ```python
@@ -212,10 +193,7 @@ visual.gdp_per_capita.plot(kind='box')
 plt.title('Box Plot',fontweight = 'bold',fontsize = 20 )
 ```
 
-
-
-![png](/images/output_7_1.png)
-
+![]({{"/images/output_7_1.png"|absolute_url}})
 
 
 ```python
@@ -234,7 +212,7 @@ plt.show()
 ```
 
 
-![png](/images/output_8_0.png)
+![]({{"/images/output_8.0.png"|absolute_url}})
 
 
 
@@ -322,8 +300,7 @@ plt.subplot(1,2,2); smoking.smoker.value_counts().plot(kind='pie',colors=['C2','
 ```
 
 
-![png](/images/output_16_1.png)
-
+![]({{"/images/output_16_1.png"|absolute_url}})
 
 
 ```python
@@ -332,5 +309,4 @@ plt.title('Bar Chart',fontweight="bold",fontsize = 20)
 plt.ylabel('Percentage')
 ```
 
-
-![png](/images/output_17_1.png)
+![]({{"/images/output_17_1.png"|absolute_url}})
