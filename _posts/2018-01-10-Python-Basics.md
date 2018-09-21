@@ -174,6 +174,9 @@ plt.show()
 <img alt="Mobile home page" src="/_screenshots/2.png?raw=true" width="300px" />
 
 
+<br>Setting up the environment
+<br>![1](https://github.com/dchandra1985/portfolio/blob/gh-pages/images/output_5_1.png)
+
 
 
 
