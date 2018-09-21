@@ -170,6 +170,9 @@ plt.show()
 
 <img src="images/output_5_1.png">
 
+![Desktop](/_screenshots/1.png?raw=true)
+<img alt="Mobile home page" src="/_screenshots/2.png?raw=true" width="300px" />
+
 
 
 
