@@ -163,6 +163,12 @@ plt.show()
 
 ![img](/images/output_5_1.png)
 
+![img](images/output_5_1.png)
+
+
+<img src="images/output_5_1.png">
+
+
 
 
 
