@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Markup
+title: Deep Learning
 ---
 
 Another sample category page.
