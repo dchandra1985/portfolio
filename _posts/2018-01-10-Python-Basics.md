@@ -175,7 +175,7 @@ plt.show()
 
 
 <br>Setting up the environment
-<br>![1](https://github.com/dchandra1985/portfolio/blob/gh-pages/images/output_5_1.png)
+<br>![img](https://github.com/dchandra1985/portfolio/blob/gh-pages/images/output_5_1.png)
 
 
 
