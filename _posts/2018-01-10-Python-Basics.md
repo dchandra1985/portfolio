@@ -159,7 +159,9 @@ plt.show()
 ```
 
 
- <img src="images/output_5_1.png">
+![png](images/output_5_1.png)
+
+
 
 
 
