@@ -160,6 +160,7 @@ plt.title('scatter Plot',fontweight="bold",fontsize = 20)
 plt.show()
 ```
 
+![]({{"/images/output_5_1.png"|absolute_url}})
 
 ![img](/img/output_5_1.png)
 
