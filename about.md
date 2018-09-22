@@ -3,6 +3,7 @@ layout: page
 title: About Me
 sidebar_link: true
 sidebar_sort_order: 70
+google_analytics: UA-126196456-1
 ---
 
 # Welcome!
@@ -20,7 +21,7 @@ sidebar_sort_order: 70
 
     <p>On a more personal level, I’m constantly trying to learn how to be better at things that really matter, like living intentionally, appreciating people, and adapting to the changes.</p>
 
-    <p>I have been learning and practicing data science for past few years and thought I would share my experiences along the way as I recap what I have learnt to help solidify what I learn and keep track of my progress. This blog will keep my learning structured and help keep me focused. Hopefully it will also be of some use to anyone new to data science as I share any useful resources I come across.</p>
+    <p>I have been learning and practicing data science for past few years and thought I would share my experiences along the way as I recap what I have learnt to date. This blog will keep my learning structured and help keep me focused. Hopefully it will also be of some use to anyone new to data science as I share any useful resources I come across.</p>
 
     <p>For further details and contents, please visit the repository on <a href="https://github.com/dchandra1985">Github</a></p>
     
