@@ -6,6 +6,6 @@ I have been learning and practicing data science for past few years and thought 
 
 This portfolio includes
 
-Statistics
-Machine Learning
-Deep Learning
+* `Statistics
+* `Machine Learning
+* `Deep Learning
