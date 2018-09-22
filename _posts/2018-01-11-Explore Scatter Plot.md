@@ -30,18 +30,18 @@ import matplotlib # for plotting
 import matplotlib.pyplot as plt
 ```
 
-
+Python libraries for interactive plots
 ```python
 from ipywidgets import interact, widgets # for interactive plotting
 from IPython.display import Image # for display the image
 import matplotlib.patches as mpatches # for creating the plotting legends
 ```
 
+%matplotlib is a magic function in IPython.%matplotlib inline sets the backend of matplotlib to the 'inline' backend. With this backend, the output of plotting commands is displayed inline within frontends like the Jupyter notebook, directly below the code cell that produced it.
 
 ```python
 %matplotlib inline
 ```
-
 
 ```python
 # Read the csv file using pandas
@@ -49,10 +49,12 @@ visual = pd.read_csv('data-1.csv')
 ```
 Download the [data-1.csv](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/data-1.csv)
 
+Display the basic table information
+
 ```python
-# Display the basic table information
 visual.info()
 ```
+result:
 
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 14740 entries, 0 to 14739
@@ -76,6 +78,7 @@ visual.info()
 visual.head(5)
 ```
 
+result:
 
 <div style="overflow-x:auto;">
 <table>
@@ -159,11 +162,9 @@ visual.head(5)
 </div>
 
 
-
+## Basic scatter Plot
 
 ```python
-# Basic scatter Plot
-
 plt.figure(figsize=(5,5))
 visual[visual.year == 1970].plot.scatter('babies_per_woman','age5_surviving')
 plt.xlabel('Babies per women', fontsize=15)
@@ -175,7 +176,7 @@ plt.show()
 
 ![]({{"/images/output_7_1_1.png"|absolute_url}})
 
-
+## Bubble Scatter Plot
 
 ```python
 def plotyear(year):
@@ -205,10 +206,9 @@ plotyear(1980)
 ![]({{"/images/output_8_1_0.png"|absolute_url}})
 
 
+## Interactive scatter Plot
 
 ```python
-# Interactive scatter Plot
-
 def plotyear(year):
     data = visual[visual.year == year]
     area = 1e-5 * data.population
@@ -238,6 +238,9 @@ interact(plotyear,year=widgets.IntSlider(min=1950,max=2015,step=1,value=1950))
 
 ![]({{"/images/Peek 2018-09-22 17-11.gif"|absolute_url}})
 
+A scatter matrix is a pair-wise scatter plot of several variables presented in a matrix format. It can be used to determine whether the variables are correlated and whether the correlation is positive or negative
+
+## Scatter Matrix Plot
 
 ```python
 visual['log10_gdp_per_day'] = np.log10(visual['gdp_per_day'])
