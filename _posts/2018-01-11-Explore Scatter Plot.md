@@ -236,7 +236,6 @@ def plotyear(year):
 interact(plotyear,year=widgets.IntSlider(min=1950,max=2015,step=1,value=1950))
 ```
 
-%%html
 ![]({{"/images/Peek 2018-09-22 17-11.gif"|absolute_url}})
 
 
