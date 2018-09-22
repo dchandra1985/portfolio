@@ -238,9 +238,9 @@ interact(plotyear,year=widgets.IntSlider(min=1950,max=2015,step=1,value=1950))
 
 ![]({{"/images/Peek 2018-09-22 17-11.gif"|absolute_url}})
 
-A scatter matrix is a pair-wise scatter plot of several variables presented in a matrix format. It can be used to determine whether the variables are correlated and whether the correlation is positive or negative
-
 ## Scatter Matrix Plot
+
+A scatter matrix is a pair-wise scatter plot of several variables presented in a matrix format. It can be used to determine whether the variables are correlated and whether the correlation is positive or negative
 
 ```python
 visual['log10_gdp_per_day'] = np.log10(visual['gdp_per_day'])
