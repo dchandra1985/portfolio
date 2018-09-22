@@ -164,6 +164,8 @@ result:
 
 ## Basic scatter Plot
 
+A Scatter (XY) Plot has points that show the relationship between two sets of data. It show how much one variable is affected by another. The relationship between two variables is called their correlation .
+
 ```python
 plt.figure(figsize=(5,5))
 visual[visual.year == 1970].plot.scatter('babies_per_woman','age5_surviving')
@@ -177,6 +179,8 @@ plt.show()
 ![]({{"/images/output_7_1_1.png"|absolute_url}})
 
 ## Bubble Scatter Plot
+
+A bubble chart is a variation of a scatter chart in which the data points are replaced with bubbles, and an additional dimension of the data is represented in the size of the bubbles.
 
 ```python
 def plotyear(year):
