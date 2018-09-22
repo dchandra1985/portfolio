@@ -198,7 +198,7 @@ result :
     (-0.7006560356274913, 0.0)
 
 
-The above result shows that the relationship between them are negativility correlated and statistically significant due to low  p value.
+The above result shows that the relationship between them are negative correlated and statistically significant due to low  p value.
 
 
 ## Bubble Scatter Plot
