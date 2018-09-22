@@ -178,6 +178,29 @@ plt.show()
 
 ![]({{"/images/output_7_1_1.png"|absolute_url}})
 
+
+Calculate a Pearson correlation coefficient and the p-value for testing non-correlation.
+The Pearson correlation coefficient measures the linear relationship between two datasets.
+Correlations of -1 or +1 imply an exact linear relationship. 
+Positive correlations imply that as x increases, so does y.
+Negative correlations imply that as x increases, y decreases.
+The p-value roughly indicates the probability of an uncorrelated system.
+
+![]({{"/images/corr_coeff.png"|absolute_url}})
+
+
+```python
+stats.pearsonr(visual['babies_per_woman'],visual['age5_surviving'])
+```
+
+result :
+
+    (-0.7006560356274913, 0.0)
+
+
+The above result shows that the relationship between them are negativility correlated and statistically significant due to low  p value.
+
+
 ## Bubble Scatter Plot
 
 A bubble chart is a variation of a scatter chart in which the data points are replaced with bubbles, and an additional dimension of the data is represented in the size of the bubbles.
