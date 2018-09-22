@@ -4,9 +4,8 @@ highlighter:      rouge
 
 # Setup
 title:            Data Science
-tagline:          'A Jekyll theme'
-description:      'Blog by 
-                   Dinesh Chandrasekaran ASQ-CSSBB, PMP, PMI-ACP'
+tagline:          'Data Science'
+description:      'Blog by Dinesh Chandrasekaran, ASQ-CSSBB, PMP, PMI-ACP'
 url:              https://dchandra1985.github.io
 baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
