@@ -155,6 +155,7 @@ result:
 </div>
 
 
+
 Describe basic statistics summary of a feature or variable
 
 ```python
@@ -247,19 +248,11 @@ result:
     dtypes: int64(1), object(2)
     memory usage: 30.9+ KB
 
-
+Grouping the data
 
 ```python
 smoking['ageGroup'] = pd.cut(smoking.age,[0,30,40,50],labels=['0-30','30-40','40-50'])
-```
-
-
-```python
 bysmoker = smoking.groupby("smoker").outcome.value_counts(normalize=True)
-```
-
-
-```python
 byage = smoking.groupby(['ageGroup','smoker']).outcome.value_counts(normalize=True)
 ```
 Display the group information
