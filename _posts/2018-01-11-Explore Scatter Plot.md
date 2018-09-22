@@ -231,10 +231,11 @@ def plotyear(year):
     plt.show()
 ```
 
-
+<section-live>
 ```python
 interact(plotyear,year=widgets.IntSlider(min=1950,max=2015,step=1,value=1950))
 ```
+</section-live>
 
 
 
