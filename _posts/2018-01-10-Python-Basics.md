@@ -14,7 +14,7 @@ excerpt_separator: <!-- more -->
 This topic explains the basics of python like data ingestion, exploration and visualization using basic plots.
 <!-- more -->
 
-## data ingestion
+## Data ingestion
 
 Python library is a collection of functions and methods that allows you to perform many actions without writing your code.
 To make use of the functions in a module, you'll need to import the module with an import statement
