@@ -11,7 +11,7 @@ last_modified_at: 2018-01-10
 excerpt_separator: <!-- more -->
 ---
 
-This topic explains the basics of python like data import, data information and data visualization using basic plots.
+This topic explains the basics of python like data exploration and data visualization using basic plots.
 <!-- more -->
 
 ## Python Basics
@@ -30,8 +30,9 @@ import matplotlib.pyplot as plt
 
 ```python
 # Read the csv file using pandas
-visual = pd.read_csv('data-1.csv')
+visual = pd.read_csv('data-1.csv') 
 ```
+Dowload the [data-1.csv](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/data-1.csv)
 
 
 ```python
@@ -219,7 +220,7 @@ plt.show()
 ```python
 smoking = pd.read_csv('smoking.csv')
 ```
-
+Dowload the [smoking.csv](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/smoking.csv)
 
 ```python
 smoking.info()
