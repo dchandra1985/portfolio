@@ -37,7 +37,7 @@ import matplotlib.pyplot as plt
 # Read the csv file using pandas
 visual = pd.read_csv('data-1.csv') 
 ```
-Download the [data-1.csv](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/data-1.csv)
+Download the [data-1.csv](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/data-1.zip)
 
 # Data exploration
 
@@ -230,7 +230,7 @@ plt.show()
 ```python
 smoking = pd.read_csv('smoking.csv')
 ```
-Download the [smoking.csv](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/smoking.csv)
+Download the [smoking.csv](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/smoking.zip)
 
 Display the basic data information
 
