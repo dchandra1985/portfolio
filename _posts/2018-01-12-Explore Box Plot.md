@@ -3,6 +3,7 @@ layout: post
 title: "Detecting the outliers in the data using box plot"
 categories:
   - Machine Learning
+  - Statistics
 tags:
   - python
   - visualization
