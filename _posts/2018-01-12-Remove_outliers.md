@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Removing the outliers using statistics"
