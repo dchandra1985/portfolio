@@ -2,7 +2,7 @@
 layout: post
 title: "Removing the outliers using statistics"
 categories:
-  - Machine Learning
+  - Machine Learning, Statistics
 tags:
   - python
   - visualization
