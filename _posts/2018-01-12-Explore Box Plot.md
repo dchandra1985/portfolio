@@ -49,6 +49,7 @@ Download the [data-1.csv](https://github.com/dchandra1985/portfolio/blob/gh-page
 # Display the basic table information
 visual.info()
 ```
+result:
 
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 14740 entries, 0 to 14739
@@ -168,7 +169,7 @@ visual.gdp_per_capita.describe()
 ```
 
 
-
+result:
 
     count     14740.000000
     mean       9000.506513
