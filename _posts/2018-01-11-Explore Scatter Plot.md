@@ -3,6 +3,7 @@ layout: post
 title: "Understanding the relationship between the features using basic and advanced scatter plot"
 categories:
   - Machine Learning
+  - Statistics
 tags:
   - python
   - visualization
