@@ -38,9 +38,9 @@ arr = [10, 386, 479, 627, 20, 523, 482, 483, 542, 699, 535, 617, 577, 471, 615, 
 data = np.array(arr,dtype=float)
 ```
 
+## Identify outliers visually
 
 ```python
-# Plot box plot to find out the outliers using a single feature or variable
 sns.boxplot(data=data,
                  width=0.5,
                  palette="colorblind")
@@ -49,6 +49,8 @@ sns.boxplot(data=data,
 
 ![]({{"/images/ML_4_1.png"|absolute_url}})
 
+
+## Remove outliers
 
 Remove the outlier points by eliminating any points that were above (Mean + 2*SD) and any points below (Mean - 2*SD) before plotting the frequencies.
 
@@ -62,9 +64,7 @@ final_list = [x for x in final_list if (x < mean + 2 * sd)]
 
 ```
 
-
 ```python
-# Plot box plot to find out the outliers using a single feature or variable
 sns.boxplot(data=final_list,
                  width=0.5,
                  palette="colorblind")
