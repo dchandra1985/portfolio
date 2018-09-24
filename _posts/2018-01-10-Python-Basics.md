@@ -27,7 +27,7 @@ import matplotlib # for plotting
 import matplotlib.pyplot as plt
 ```
 
-%matplotlib is a magic function in IPython.%matplotlib inline sets the backend of matplotlib to the 'inline' backend. With this backend, the output of plotting commands is displayed inline within frontends like the Jupyter notebook, directly below the code cell that produced it.
+Matplotlib is a magic function in IPython.Matplotlib inline sets the backend of matplotlib to the 'inline' backend. With this backend, the output of plotting commands is displayed inline within frontends like the Jupyter notebook, directly below the code cell that produced it.
 
 ```python
 %matplotlib inline
