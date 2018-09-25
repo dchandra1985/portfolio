@@ -57,7 +57,7 @@ result:
     dtypes: float64(2)
     memory usage: 15.7 KB
 
-## histogram
+## Histogram
 
 A histogram is an accurate representation of the distribution of numerical data.
 
