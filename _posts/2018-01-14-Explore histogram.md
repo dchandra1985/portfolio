@@ -98,6 +98,9 @@ A distribution is positively skewed if the scores fall toward the lower side of 
 Positively skewed data is also referred to as skewed to the right because that is the direction of the 'long tail end' of the chart.
 
 
+
+## Comparing the distributions between different continuous variable
+
 ```python
 china1965.log10_income.plot.hist(histtype='step',bins=20)
 usa1965.log10_income.plot.hist(histtype='step',bins=20)
