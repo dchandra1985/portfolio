@@ -81,7 +81,7 @@ plt.title("Histogram",fontweight="bold",fontsize=15)
 *  The probability density function is nonnegative everywhere
 *  The integral over the entire space or area under the curve is equal to one.
 
-![]({{"/images/PDF.png"|absolute_url}})
+![]({{"/images/PDF1.png"|absolute_url}})
 
 
 ```python
