@@ -4,7 +4,6 @@ highlighter:      rouge
 
 # Setup
 title:            Data Science
-author-img:       dinesh.png
 tagline:          'Data Science'
 description:      'Blog by <br> Dinesh Chandrasekaran <br> <font size="3">ASQ-CSSBB, PMP, PMI-ACP</font>'
 url:              https://dchandra1985.github.io
