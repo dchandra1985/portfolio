@@ -3,7 +3,7 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            <img src="images/dinesh.png">
+title:            ![]({{"/images/dinesh.png"|absolute_url}})
 tagline:          'Data Science'
 description:      'Blog by <br> Dinesh Chandrasekaran <br> <font size="3">ASQ-CSSBB, PMP, PMI-ACP</font>'
 url:              https://dchandra1985.github.io
