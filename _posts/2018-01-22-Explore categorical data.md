@@ -58,7 +58,9 @@ result:
     dtypes: int64(1), object(2)
     memory usage: 30.9+ KB
 
+## hypothesis
 
+Let's assume the smoking is having an effect on life span.
 
 ```python
 smoking['ageGroup'] = pd.cut(smoking.age,[0,30,40,50],labels=['0-30','30-40','40-50'])
@@ -127,10 +129,10 @@ plt.ylabel('% of alive/dead',fontweight='bold',fontsize = 10)
 ![]({{"/images/ML_6_3.png"|absolute_url}})
 
 
-The above chart depicts that the claimed hypothesis (smoking will reduce the lifespan) is false.
-The main reason for the data bias is the data is grouped only using smoker variable.
-This will take the acoount of all the age groups.
-But we have to study the effect of smoking with respect to the young age groups.
+The above chart depicts that the claimed hypothesis (smoking is having an effect on lifespan) is false.
+The reason may be due to data segregation.
+To understand and to study the effect of smoker variable to the outcome, we have to segregate the data with respect to smoker and age.
+This will help us to study the effect of smoking with respect to the different age groups.
 
 
 ```python
@@ -312,5 +314,6 @@ plt.ylabel('% of alive/dead',fontweight='bold',fontsize = 10)
 ![]({{"/images/ML_6_5.png"|absolute_url}})
 
 
-The above chart clearly depicts the effect of smoking with respect to the age group.
+The above chart clearly depicts the effect of smoking with the outcome.
 The smoking is having an negative effect and reduces life span.
+So the claimed hypotheis is true.
