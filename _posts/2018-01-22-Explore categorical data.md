@@ -58,7 +58,7 @@ result:
     dtypes: int64(1), object(2)
     memory usage: 30.9+ KB
 
-## hypothesis
+## Hypothesis
 
 Let's assume the smoking is having an effect on life span.
 
