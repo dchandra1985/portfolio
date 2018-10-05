@@ -10,13 +10,8 @@ h1, h2, h3, h4, h5, h6, .site-title {
   text-rendering: optimizeLegibility;
 }
 
+.logo{ vertical-align: middle; }
 
-.logo {
-  margin-bottom: $heading-spacing;
-  border : 0;
-  max-width: 100%;
-  height: auto;
-}
 
 h1 {
   font-size: 2rem;
