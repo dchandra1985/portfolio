@@ -3,6 +3,7 @@ layout: post
 title: "Types of Data"
 categories:
   - Statistics
+  - Machine Learning 
 tags:
   - Data types
 
@@ -33,6 +34,8 @@ Height, weight and many which are measured using real numbers are the examples o
 <li>  <b>Discrete data</b> represent items that can be counted. It can be described as a list of finite values on the whole number.
 No. of defects, No. of students in a class are the examples of a discrete data.</li>
 
+</ul>
+
 ### Categorical
 
 Values or observations that can be sorted into groups or categories. Bar charts and pie graphs are used to graph categorical data.
@@ -49,3 +52,5 @@ Tshirt sizes like XXXL,XXl,XL,L,M,S is one of the example of a ordinal data.
 
 <li>  <b>binary data</b> represent categories that have only two outcomes or values.
 Yes/No, 1 or 0 are the examples of a binary data.
+
+</ul>
