@@ -57,26 +57,7 @@ img {
 }
 
 
-.image {
-		display: inline-block;
-		border: 0;
 
-		img {
-			display: block;
-			width: 100%;
-		}
-
-		&.avatar48 {
-			width: 48px;
-			height: 48px;
-			background: #f00;
-
-			img {
-				width: 48px;
-				height: 48px;
-			}
-		}
-}
 
 table {
   margin-bottom: 1rem;
