@@ -40,7 +40,7 @@ No. of defects, No. of students in a class are the examples of a discrete data.<
 
 Values or observations that can be sorted into groups or categories. Bar charts and pie graphs are used to graph categorical data.
 
-Categorical data is further divided into Nominal, Ordinal and binary.
+Categorical data is further divided into Nominal, Ordinal and Binary.
 
 <ul style="list-style-type:none">
 
@@ -50,7 +50,7 @@ Student names in a class, colors in a rainbow are the examples of a nominal data
 <li>  <b>Ordinal data</b> represent ordered categories that have an implicit or natural value or rank.
 Tshirt sizes like XXXL,XXL,XL,L,M,S is one of the example of a ordinal data.</li>
 
-<li>  <b>binary data</b> represent categories that have only two outcomes or values.
+<li>  <b>Binary data</b> represent categories that have only two outcomes or values.
 Yes/No, 1 or 0 are the examples of a binary data.</li>
 
 </ul>
