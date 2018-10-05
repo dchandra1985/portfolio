@@ -7,9 +7,6 @@ google_analytics: UA-126196456-1
 ---
 
 # Welcome!
-<div class="left-col">
-    <img src="images/dinesh.png">
-</div>
 
 <div class="right-col">
     
