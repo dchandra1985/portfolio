@@ -60,11 +60,9 @@ result:
 
 ## Hypothesis
 
-Let's assume the smoking is having an effect on life span.
+The given data represents the number of smokers and non smokers with different age group and their survival.
+Let's assume the smoking is having an effect on life span. So we analyze the data using pie and bar chart to visualize whether the given data shows an effect on life span.
 
-```python
-smoking['ageGroup'] = pd.cut(smoking.age,[0,30,40,50],labels=['0-30','30-40','40-50'])
-```
 
 
 ```python
@@ -85,7 +83,9 @@ result:
             Dead       0.238832
     Name: outcome, dtype: float64
 
-The above groupby information is giving clear idea about the effect of smoking with respect to the age.
+The above groupby information is giving an idea that the survival rate is increased due to smoking.
+This is totally unrealistic. This may be due to the data is biased so that we are not able to analyze properly.
+So we will use the groupby option to segregrate the data further and visualize the data using pie and bar chart.
 
 ## Pie chart
 
@@ -102,6 +102,7 @@ plt.title('smoker',fontweight='bold',fontsize = 15)
 ```
 
 ![]({{"/images/ML_6_1.png"|absolute_url}})
+
 
 ## Bar Chart
 
@@ -128,11 +129,18 @@ plt.ylabel('% of alive/dead',fontweight='bold',fontsize = 10)
 
 ![]({{"/images/ML_6_3.png"|absolute_url}})
 
+<p>
+The above chart depicts that the claimed hypothesis (smoking habit is having an effect on lifespan) is rejected.The reason may be due to data bias.</p>
+<p>
+To understand and study the effect of smoker variable to the outcome, we have to further segregate the data with respect to smoker and age.
+This will help us to study the effect of smoking with respect to the different age groups and their survival.
+</p>
 
-The above chart depicts that the claimed hypothesis (smoking is having an effect on lifespan) is false.
-The reason may be due to data segregation.
-To understand and to study the effect of smoker variable to the outcome, we have to segregate the data with respect to smoker and age.
-This will help us to study the effect of smoking with respect to the different age groups.
+Here the data is grouped using several age groups. The main reason is the outcome data(Alive/dead) represents all the age groups. But we are focussed only on studying the effect on smoking. People are dying after 50 or more age group may not be due to smoking. That may be one of the factors. So we are neglecting the age groups after 50 for this analysis. This is one type of data cleaning.
+
+```python
+smoking['ageGroup'] = pd.cut(smoking.age,[0,30,40,50],labels=['0-30','30-40','40-50'])
+```
 
 
 ```python
