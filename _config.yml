@@ -4,7 +4,7 @@ highlighter:      rouge
 
 # Setup
 title:            Data Science
-tagline:          'Data Science'
+tagline:          'blog by Dinesh Chandrasekaran'
 description:      'Blog by <br> Dinesh Chandrasekaran <br> <font size="3">ASQ-CSSBB, PMP, PMI-ACP</font>'
 url:              https://dchandra1985.github.io
 baseurl:          # the optional subpath of your site, e.g. "/blog"
