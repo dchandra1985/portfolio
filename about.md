@@ -12,7 +12,9 @@ google_analytics: UA-126196456-1
     
     <p>Thanks for visiting my personal technology blog</p>
 
-    <p>My name is Dinesh Chandrasekaran, ASQ-CSSBB, PMP, PMI-ACP. I have successfully completed my International Master’s Degree in Turbulence jointly by Ecole Centrale de Lille, Ecole Nationale Supérieure de Mécanique et d’Aérotechnique de Poitiers and Ecole Nationale Supérieure d’Ingénieurs de Poitiers, France. I have around nine years of industry and research experience in project management and data science.</p>
+    <p>My name is Dinesh Chandrasekaran, ASQ-CSSBB, PMP, PMI-ACP. I have successfully completed my International Master’s Degree in Turbulence jointly by Ecole Centrale de Lille, Ecole Nationale Supérieure de Mécanique et d’Aérotechnique de Poitiers and Ecole Nationale Supérieure d’Ingénieurs de Poitiers, France.</p>
+    
+    <p>I have around nine years of industry and research experience in data science, traditional and agile project management.</p>
 
     <p>I have some of my favorite things in life are preparing South Indian food, Chennai city, Chennai Super Kings team etc.</p>
 
