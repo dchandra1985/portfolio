@@ -1,7 +1,5 @@
 <div id="sidebar">
   <header>
-    </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
-    <span><img src={{"/images/dinesh.png"|absolute_url}}</span>
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
       <a href="{{ site.baseurl }}/">
         {% unless page.url == "/" %}
@@ -11,6 +9,8 @@
       </a>
     </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
     <p class="lead">{{ site.description }}</p>
+    </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
+    <span><img src={{"/images/dinesh.png"|absolute_url}}</span>
   </header>
   {% include sidebar-nav-links.html %}
 
