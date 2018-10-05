@@ -14,7 +14,7 @@ baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # sidebar_blog_link below.
 
 
-author:
+author:           'Dinesh Chandrasekaran'
   name:           'Dinesh Chandrasekaran'
   url:
   flair:          'Share your knowledge.It’s a way to achieve immortality(Dalai Lama)'
