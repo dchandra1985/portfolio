@@ -4,7 +4,7 @@ highlighter:      rouge
 
 # Setup
 title:            Data Science
-tagline:          'Blog'
+tagline:          'Data Science'
 description:      'Blog by <br> Dinesh Chandrasekaran <br> <font size="3">ASQ-CSSBB, PMP, PMI-ACP</font>'
 url:              https://dchandra1985.github.io
 baseurl:          # the optional subpath of your site, e.g. "/blog"
@@ -14,7 +14,7 @@ baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # sidebar_blog_link below.
 
 
-author:           'Dinesh Chandrasekaran'
+author:           
   name:           'Dinesh Chandrasekaran'
   url:
   flair:          'Share your knowledge.It’s a way to achieve immortality(Dalai Lama)'
