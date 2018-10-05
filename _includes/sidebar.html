@@ -1,6 +1,8 @@
 <div id="sidebar">
   <header>
-    <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
+    <{% if page.layout == "index" %}
+      <span class="image avatar48"><img src="_screenshots/dinesh.jpeg"</span>  
+      h1{% else %}div{% endif %} class="site-title">
       <a href="{{ site.baseurl }}/">
         {% unless page.url == "/" %}
           <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
