@@ -48,15 +48,6 @@ body {
 
     .back-arrow { margin-right: 0.5rem; }
   }
-  
-  .logo {
-  display: inline-block;
-  border : 0;
-  margin-top: 0;
-  margin-bottom: $heading-spacing;
-  vertical-align: middle;
-}
-  
 }
 
 // Container is flexbox as well -- we want content div to stretch and fill
@@ -121,12 +112,6 @@ body {
   .site-title {
     font-size: 3.25rem;
   }
-  
-  .logo {
-      width : 48px;
-      height : 48px
-}
-  
 
   // Show secondary nav content + lead
   header ~ *, p.lead {
@@ -180,7 +165,6 @@ body {
       font-size: 3.25rem;
       .back-arrow { display: none; }
     }
-    
 
     p.lead, header ~ * {
       display: block;
@@ -253,9 +237,6 @@ body {
   color: $sidebar-title-color;
   a { color: inherit; }
 }
-
-
-
 #sidebar nav {
   display: flex;
 }
