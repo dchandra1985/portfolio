@@ -111,7 +111,7 @@ def read_data():
     data = pd.read_csv('data-scatter.csv')
     return data    
 ```
-
+Download the [data-scatter.zip](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/data-scatter.zip)
 
 ```python
 def plot(data):
