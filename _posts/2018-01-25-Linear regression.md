@@ -53,7 +53,8 @@ The three important metrics for regression :
   <li> <b>Mean absolute error</b> </li>
 This measure gives an idea of the magnitude of the error, but no direction.It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.
 
-![]({{"/images/ML_7_3.png"|absolute_url}})
+
+<li><img src="./images/ML_7_3.png"></li>
 
   <li> <b>Mean squared error</b> </li>
    In statistics, the mean squared error (MSE) or mean squared deviation (MSD) of an estimator (of a procedure for estimating an unobserved quantity) measures the average of the squares of the errors—that is, the average squared difference between the estimated values and what is estimated.
