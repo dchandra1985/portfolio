@@ -42,12 +42,10 @@ Before understanding the metrics, we need to understand the most important conce
     <ul style="list-style-type:none">
       <li> Overfitting occurs when a statistical model or machine learning algorithm captures the noise of the data.  Intuitively, overfitting occurs when the model or the algorithm fits the data too well.  Specifically, overfitting occurs if the model or algorithm shows low bias but high variance.  Overfitting is often a result of an excessively complicated model, and it can be prevented by fitting multiple models and using validation or cross-validation to compare their predictive accuracies on test data.</li>
     </ul>
-  </li>
   <li> <b>Underfitting</b> </li>
   <ul style="list-style-type:none">
     <li> Underfitting occurs when a statistical model or machine learning algorithm cannot capture the underlying trend of the data.  Intuitively, underfitting occurs when the model or the algorithm does not fit the data well enough.  Specifically, underfitting occurs if the model or algorithm shows low variance but high bias.  Underfitting is often a result of an excessively simple model.</li>
     </ul>
-  </li>
 </ol>
 
 Both overfitting and underfitting lead to poor predictions on new data sets.<br>
@@ -57,27 +55,26 @@ The three important metrics for regression :
 <ol>
   <li> <b>Mean absolute error</b> </li>
     <ul style="list-style-type:none">
-      This measure gives an idea of the magnitude of the error, but no direction.It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.
+      <li> This measure gives an idea of the magnitude of the error, but no direction.It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.</li>
     </ul>
-  </li>
+
 
   ![]({{"/images/ML_7_3.png"|absolute_url}})
 
   <li> <b>Mean squared error</b> </li>
   <ul style="list-style-type:none">
-    In statistics, the mean squared error (MSE) or mean squared deviation (MSD) of an estimator (of a procedure for estimating an unobserved quantity) measures the average of the squares of the errors—that is, the average squared difference between the estimated values and what is estimated.
+    <li>In statistics, the mean squared error (MSE) or mean squared deviation (MSD) of an estimator (of a procedure for estimating an unobserved quantity) measures the average of the squares of the errors—that is, the average squared difference between the estimated values and what is estimated.</li>
     </ul>
-  </li>
 
-    ![]({{"/images/ML_7_4.png"|absolute_url}})
 
-    <li> <b>Coefficient of determination</b> </li>
-      <ul style="list-style-type:none">
-        This measure provides an indication of the goodness of fit of a set of predictions to the actual values. It is also referered as R<sup>2</sup>.
-      </ul>
-    </li>
+   ![]({{"/images/ML_7_4.png"|absolute_url}})
 
-    ![]({{"/images/ML_7_5.png"|absolute_url}})
+   <li> <b>Coefficient of determination</b> </li>
+     <ul style="list-style-type:none">
+       <li>This measure provides an indication of the goodness of fit of a set of predictions to the actual values. It is also referered as R<sup>2</sup>.</li>
+     </ul>
+
+   ![]({{"/images/ML_7_5.png"|absolute_url}})
 </ol>
 
 
