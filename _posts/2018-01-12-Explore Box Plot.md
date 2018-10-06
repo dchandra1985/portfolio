@@ -16,7 +16,7 @@ last_modified_at: 2018-01-10
 excerpt_separator: <!-- more -->
 ---
 
-This topic explains the basics of box plot and to detect the outliers of the given data visually using box plot.
+This topic explains the basics of a box plot and to detect the outliers of the given data visually using box plot.
 <!-- more -->
 
 ## Data ingestion
