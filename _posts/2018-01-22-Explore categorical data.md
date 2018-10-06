@@ -15,7 +15,7 @@ last_modified_at: 2018-09-23
 excerpt_separator: <!-- more -->
 ---
 
-This topic explains the method to understand the categorical data using pie chart and bar chart.
+This topic explains the method to understand the categorical data using the pie chart and bar chart.
 <!-- more -->
 
 ## Data ingestion
@@ -60,8 +60,8 @@ result:
 
 ## Hypothesis
 
-The given data represents the number of smokers and non smokers with different age group and their survival.
-Let's assume the smoking is having an effect on life span. So we analyze the data using pie and bar chart to visualize whether the given data shows an effect on life span.
+The given data represents the number of smokers and non-smokers with different age groups and their survival.
+Let's assume the smoking is causing an effect on the lifespan. Therefore, we analyze the data using pie and bar chart to visualize whether the given data explains an effect on the lifespan.
 
 
 
@@ -82,10 +82,11 @@ result:
     Yes     Alive      0.761168
             Dead       0.238832
     Name: outcome, dtype: float64
-
-The above groupby information is giving an idea that the survival rate is increased due to smoking.
-This is totally unrealistic. This may be due to the data is biased so that we are not able to analyze properly.
-So we will use the groupby option to segregrate the data further and visualize the data using pie and bar chart.
+    
+    
+The previous group-by information is indicating an idea that the survival rate is increased due to smoking.
+This is completely unrealistic. This may be due to the data is biased so that we are unable to analyze properly.
+Therefore, we will implement the group-by option to segregate the data further and visualize the data using pie and bar chart.
 
 ## Pie chart
 
@@ -130,13 +131,13 @@ plt.ylabel('% of alive/dead',fontweight='bold',fontsize = 10)
 ![]({{"/images/ML_6_3.png"|absolute_url}})
 
 <p>
-The above chart depicts that the claimed hypothesis (smoking habit is having an effect on lifespan) is rejected.The reason may be due to data bias.</p>
+The above chart illustrates that the claimed hypothesis (smoking habit is having an effect on the lifespan.) is rejected. The reason may be due to data bias.</p>
 <p>
 To understand and study the effect of smoker variable to the outcome, we have to further segregate the data with respect to smoker and age.
 This will help us to study the effect of smoking with respect to the different age groups and their survival.
 </p>
 
-Here the data is grouped using several age groups. The main reason is the outcome data(Alive/dead) represents all the age groups. But we are focussed only on studying the effect on smoking. People are dying after 50 or more age group may not be due to smoking. That may be one of the factors. So we are neglecting the age groups after 50 for this analysis. This is one type of data cleaning.
+Here the data is grouped using several age groups. The primary reason is the outcome data(Alive/dead) represents all the age groups. But we are focussed only on studying the effect on smoking. People are dying after 50 or more age groups may not be due to smoking. That may be one of the factors. Therefore, we are neglecting the age groups after 50 for this analysis. This is one type of data cleaning.
 
 ```python
 smoking['ageGroup'] = pd.cut(smoking.age,[0,30,40,50],labels=['0-30','30-40','40-50'])
@@ -321,7 +322,6 @@ plt.ylabel('% of alive/dead',fontweight='bold',fontsize = 10)
 
 ![]({{"/images/ML_6_5.png"|absolute_url}})
 
-
-The above chart clearly depicts the effect of smoking with the outcome.
-The smoking is having an negative effect and reduces life span.
-So the claimed hypotheis is true.
+The above chart clearly describes the effect of smoking on the outcome.
+The smoking is having a negative effect and reduces the lifespan.
+Therefore, the claimed hypothesis is true.
