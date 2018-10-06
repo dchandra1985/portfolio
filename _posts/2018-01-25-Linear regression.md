@@ -59,7 +59,7 @@ The three important metrics for regression :
     </ul>
   
  <div class="left-col">
-    <img src="//images/ML_7_4.png">
+    <img src=https://github.com/dchandra1985/portfolio/blob/gh-pages/images/ML_7_1.png title="MAE">
 </div>
  
 
