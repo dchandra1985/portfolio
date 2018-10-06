@@ -49,26 +49,23 @@ Both overfitting and underfitting lead to poor predictions on new data sets.<br>
 
 The three important metrics for regression :
 
-<ol>
-  <li> <b>Mean absolute error</b></li>
+1. <b>Mean absolute error</b>
 This measure gives an idea of the magnitude of the error, but no direction.It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.
   
- </ol>
- 
- <div class="left-col">
+
    ![]({{"/images/ML_7_3.png"|absolute_url}})
- </div>
 
-<ol>
 
-  <li> <b>Mean squared error</b> </li>
+ 2. <b>Mean squared error</b>
    In statistics, the mean squared error (MSE) or mean squared deviation (MSD) of an estimator (of a procedure for estimating an unobserved quantity) measures the average of the squares of the errors—that is, the average squared difference between the estimated values and what is estimated.
 
 
-   <li> <b>Coefficient of determination</b> </li>
+   ![]({{"/images/ML_7_4.png"|absolute_url}})
+
+ 3. <b>Coefficient of determination</b>
     This measure provides an indication of the goodness of fit of a set of predictions to the actual values. It is also referered as R<sup>2</sup>.
 
-</ol>
+   ![]({{"/images/ML_7_5.png"|absolute_url}})
 
 
 
