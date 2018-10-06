@@ -58,9 +58,9 @@ The three important metrics for regression :
        <li>This measure gives an idea of the magnitude of the error, but no direction.It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.</li>
     </ul>
   
- <div class="left-col">
-    <img src=https://github.com/dchandra1985/portfolio/blob/gh-pages/images/ML_7_3.png title="MAE">
-</div>
+ 
+  <img src=https://github.com/dchandra1985/portfolio/blob/gh-pages/images/ML_7_3.png title="MAE">
+
  
 
 
