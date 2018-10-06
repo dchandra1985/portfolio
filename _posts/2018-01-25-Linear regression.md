@@ -55,9 +55,9 @@ This measure gives an idea of the magnitude of the error, but no direction.It’
   
  </ol>
  
- 
- ![img]({{"/images/ML_7_3.png"|absolute_url}})
- 
+ <div class="left-col">
+   ![]({{"/images/ML_7_3.png"|absolute_url}})
+ </div>
 
 <ol>
 
