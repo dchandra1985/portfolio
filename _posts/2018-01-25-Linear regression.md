@@ -59,7 +59,7 @@ The three important metrics for regression :
     </ul>
   
  <ul>
-  ![]({{"/images/ML_7_3.png"|absolute_url}})
+  <li>![]({{"/images/ML_7_3.png"|absolute_url}})</li>
  </ul>
  
 
