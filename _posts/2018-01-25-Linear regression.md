@@ -55,7 +55,7 @@ The three important metrics for regression :
 <ol>
   <li> <b>Mean absolute error</b> </li>
     <ul style="list-style-type:none">
-      <li> This measure gives an idea of the magnitude of the error, but no direction.It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.</li>
+       This measure gives an idea of the magnitude of the error, but no direction.It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.
     </ul>
 
 
