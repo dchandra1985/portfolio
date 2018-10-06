@@ -34,7 +34,7 @@ Regression analysis is an important tool for modelling and analyzing data. Here,
 </p>
 
 ### Regression metrics
-<p>
+
 
 Before understanding the metrics, we need to understand the most important concept in regression.
 <ol>
