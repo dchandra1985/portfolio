@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Understanding the distribution of the continuous data using histogram"
+title: "Understanding the distribution of the continuous data using the histogram"
 categories:
   - Machine Learning
   - Statistics
@@ -15,7 +15,7 @@ last_modified_at: 2018-09-22
 excerpt_separator: <!-- more -->
 ---
 
-This topic explains the method to identify the distribution of a continuous variable using histogram.
+This topic explains the method to identify the distribution of a continuous variable using the histogram.
 <!-- more -->
 
 ## Data ingestion
