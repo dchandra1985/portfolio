@@ -54,31 +54,16 @@ The three important metrics for regression :
 
 <ol>
   <li> <b>Mean absolute error</b> </li>
-    <ul style="list-style-type:none">
-       <li>This measure gives an idea of the magnitude of the error, but no direction.It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.</li>
-    </ul>
-  
-
-  <li><img src="images/ML_7_3.png"></li>
-
- 
-
+This measure gives an idea of the magnitude of the error, but no direction.It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.
 
 
   <li> <b>Mean squared error</b> </li>
-  <ul style="list-style-type:none">
-    <li>In statistics, the mean squared error (MSE) or mean squared deviation (MSD) of an estimator (of a procedure for estimating an unobserved quantity) measures the average of the squares of the errors—that is, the average squared difference between the estimated values and what is estimated.</li>
-    </ul>
+   In statistics, the mean squared error (MSE) or mean squared deviation (MSD) of an estimator (of a procedure for estimating an unobserved quantity) measures the average of the squares of the errors—that is, the average squared difference between the estimated values and what is estimated.
 
-
-   ![]({{"/images/ML_7_4.png"|absolute_url}})
 
    <li> <b>Coefficient of determination</b> </li>
-     <ul style="list-style-type:none">
-       <li>This measure provides an indication of the goodness of fit of a set of predictions to the actual values. It is also referered as R<sup>2</sup>.</li>
-     </ul>
+    This measure provides an indication of the goodness of fit of a set of predictions to the actual values. It is also referered as R<sup>2</sup>.
 
-   ![]({{"/images/ML_7_5.png"|absolute_url}})
 </ol>
 
 
