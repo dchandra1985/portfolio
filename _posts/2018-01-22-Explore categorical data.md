@@ -41,7 +41,7 @@ import matplotlib.pyplot as plt
 ```python
 smoking = pd.read_csv('whickham.csv')
 ```
-Download the [data-4.zip](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/data-4.zip)
+Download the [data-4.zip](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/data-4.zip?raw=true)
 
 ```python
 smoking.info()
