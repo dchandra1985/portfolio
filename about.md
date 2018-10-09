@@ -8,6 +8,10 @@ google_analytics: UA-126196456-1
 
 # Welcome!
 
+<div class="left-col">
+    <img src={{"/images/vonkarman.jpg"|absolute_url}}>
+</div>
+
 <div class="right-col">
     
     <p>Thanks for visiting my personal technology blog</p>
