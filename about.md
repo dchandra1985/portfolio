@@ -20,7 +20,7 @@ google_analytics: UA-126196456-1
     
     <p>I have around nine years of industry and research experience in data science, traditional and agile project management.</p>
 
-    <p>I have some of my favorite things in life are preparing South Indian food, Chennai city, Chennai Super Kings team etc.</p>
+    <p>I have some of my favorite things in life are preparing south indian food, chennai city, chennai super kings team etc.</p>
 
     <p>On a more personal level, I’m constantly trying to learn how to be better at things that really matter, like living intentionally, appreciating people, and adapting to the changes.</p>
 
