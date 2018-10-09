@@ -8,7 +8,8 @@ tagline:          'Data Science'
 description:      'Blog by'
 info:             '<br>Dinesh Chandrasekaran<br><font size="3">International Master in Turbulence,<br>ASQ-CSSBB, PMP, PMI-ACP,<br> SAFe® 4 Agilist (SA),<br> SAFe® 4 Practitioner (SP)<br></font>'
 url:              https://dchandra1985.github.io
-baseurl:          # the optional subpath of your site, e.g. "/blog"
+baseurl:          ""
+                  # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
                   # other pages at root, see the paginate_path and
