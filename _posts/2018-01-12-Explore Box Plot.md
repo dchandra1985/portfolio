@@ -195,7 +195,8 @@ The box plot (a.k.a. box and whisker diagram) is a standardized way of displayin
 When reviewing a boxplot, an outlier is defined as a data point that is located outside the fences (“whiskers”) of the boxplot.
 (e.g: outside 1.5 times the interquartile range above the upper quartile and bellow the lower quartile)
 
-![]({{"/images/boxplot.png"|absolute_url}})
+<img src="/images/boxplot.png">
+
 
 ```python
 # Plot box plot to find out the outliers using a single feature or variable
@@ -207,7 +208,7 @@ plt.xlabel('Continents', fontsize=15)
 plt.ylabel('babies per woman', fontsize=15)
 ```
 
-![]({{"/images/ML_3_1.png"|absolute_url}})
+<img src="/images/ML_3_1.png">
 
 
 
@@ -255,4 +256,4 @@ plt.ylabel('gdp', fontsize=15)
 ```
 
 
-![]({{"/images/ML_3_2.png"|absolute_url}})
+<img src="/images/ML_3_2.png">
