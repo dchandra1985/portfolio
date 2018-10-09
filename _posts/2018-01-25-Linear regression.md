@@ -62,13 +62,9 @@ This measure gives an idea of the magnitude of the error, but no direction.It’
    In statistics, the mean squared error (MSE) or mean squared deviation (MSD) of an estimator (of a procedure for estimating an unobserved quantity) measures the average of the squares of the errors—that is, the average squared difference between the estimated values and what is estimated.
 
 
-   ![]({{"/images/ML_7_4.png"|absolute_url}})
-   
-
  3. <b>Coefficient of determination</b>
     This measure provides an indication of the goodness of fit of a set of predictions to the actual values. It is also referered as R<sup>2</sup>.
 
-   ![]({{"/images/ML_7_5.png"|absolute_url}})
 
 
 <p>
