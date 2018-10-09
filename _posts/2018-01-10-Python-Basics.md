@@ -192,7 +192,8 @@ plt.title('scatter Plot',fontweight="bold",fontsize = 20)
 plt.show()
 ```
 
-<img src="images/output_5_1.png">
+<img src="/images/output_5_1.png">
+
 
 ### Box Plot
 
@@ -203,7 +204,7 @@ visual.gdp_per_capita.plot(kind='box')
 plt.title('Box Plot',fontweight = 'bold',fontsize = 20 )
 ```
 
-<img src="images/output_7_1.png">
+<img src="/images/output_7_1.png">
 
 ### Histogram
 
@@ -222,7 +223,7 @@ plt.legend()
 plt.show()
 ```
 
-<img src="images/output_8_0.png">
+<img src="/images/output_8_0.png">
 
 
 ```python
@@ -304,7 +305,7 @@ plt.subplot(1,2,1); smoking.outcome.value_counts().plot(kind='pie',colors=['C0',
 plt.subplot(1,2,2); smoking.smoker.value_counts().plot(kind='pie',colors=['C2','C3']); plt.title('smoker',fontweight="bold",fontsize = 20)
 ```
 
-<img src="images/output_16_1.png">
+<img src="/images/output_16_1.png">
 
 
 ### Bar chart
@@ -316,5 +317,5 @@ bysmoker.plot(kind='bar')
 plt.title('Bar Chart',fontweight="bold",fontsize = 20)
 plt.ylabel('Percentage')
 ```
-<img src="images/output_17_1.png">
+<img src="/images/output_17_1.png">
 
