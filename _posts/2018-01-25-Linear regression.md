@@ -45,7 +45,9 @@ Before understanding the metrics, we need to understand the most important conce
    Underfitting occurs when a statistical model or machine learning algorithm cannot capture the underlying trend of the data.  Intuitively, underfitting occurs when the model or the algorithm does not fit the data well enough.  Specifically, underfitting occurs if the model or algorithm shows low variance but high bias.  Underfitting is often a result of an excessively simple model.
 </ol>
 
-Both overfitting and underfitting lead to poor predictions on new data sets.<br>
+<p>
+Both overfitting and underfitting lead to poor predictions on new data sets.
+</p>
 
 The three important metrics for regression :
 
@@ -68,8 +70,9 @@ This measure gives an idea of the magnitude of the error, but no direction.It’
    ![]({{"/images/ML_7_5.png"|absolute_url}})
 
 
-
+<p>
 Below code is a simple example of a linear regression.
+</p>
 
 
 ```python
