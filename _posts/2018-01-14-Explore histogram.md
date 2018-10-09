@@ -71,7 +71,7 @@ plt.axvline(china1965.income.quantile(0.75),c='C3',linestyle=':')
 plt.title("Histogram",fontweight="bold",fontsize=15)
 ```
 
-![]({{"/images/ML_5_1.png"|absolute_url}})
+<img src="/images/ML_5_1.png">
 
 
 ## Probability density function:
@@ -81,7 +81,8 @@ plt.title("Histogram",fontweight="bold",fontsize=15)
 *  The probability density function is nonnegative everywhere
 *  The integral over the entire space or area under the curve is equal to one.
 
-![]({{"/images/PDF1.png"|absolute_url}})
+
+<img src="/images/PDF1.png">
 
 
 ```python
@@ -91,8 +92,7 @@ plt.axis(xmin=0,xmax=3)
 plt.title("Probability density curve",fontweight="bold",fontsize=15)
 ```
 
-
-![]({{"/images/ML_5_2.png"|absolute_url}})
+<img src="/images/ML_5_2.png">
 
 
 The above distribution is positive skewed.
@@ -111,4 +111,4 @@ plt.xticks(np.log10(levels),levels);
 plt.title("China1965 Vs USA1965 income distribution",fontweight="bold",fontsize=15)
 ```
 
-![]({{"/images/ML_5_3.png"|absolute_url}})
+<img src="/images/ML_5_3.png">
