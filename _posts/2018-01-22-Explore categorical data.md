@@ -102,7 +102,7 @@ smoking.smoker.value_counts().plot(kind='pie',colors=['C3','C4'],legend=['Yes','
 plt.title('smoker',fontweight='bold',fontsize = 15)
 ```
 
-![]({{"/images/ML_6_1.png"|absolute_url}})
+<img src="/images/ML_6_1.png">
 
 
 ## Bar Chart
@@ -115,9 +115,7 @@ plt.title('Unstacked Bar Chart',fontweight='bold',fontsize = 15)
 plt.xlabel('smoker-outcome',fontweight='bold',fontsize = 10)
 ```
 
-
-![]({{"/images/ML_6_2.png"|absolute_url}})
-
+<img src="/images/ML_6_2.png">
 
 
 ```python
@@ -127,8 +125,8 @@ plt.xlabel('smoker',fontweight='bold',fontsize = 10)
 plt.ylabel('% of alive/dead',fontweight='bold',fontsize = 10)
 ```
 
+<img src="/images/ML_6_3.png">
 
-![]({{"/images/ML_6_3.png"|absolute_url}})
 
 <p>
 The above chart illustrates that the claimed hypothesis (smoking habit is having an effect on the lifespan.) is rejected. The reason may be due to data bias.</p>
@@ -179,8 +177,7 @@ plt.title('UnStacked Bar Chart',fontweight='bold',fontsize = 15)
 plt.xlabel('smoker-agegroup',fontweight='bold',fontsize = 10)
 ```
 
-
-![]({{"/images/ML_6_4.png"|absolute_url}})
+<img src="/images/ML_6_4.png">
 
 
 
@@ -319,8 +316,8 @@ plt.xlabel('Agegroup',fontweight='bold',fontsize = 10)
 plt.ylabel('% of alive/dead',fontweight='bold',fontsize = 10)
 ```
 
+<img src="/images/ML_6_5.png">
 
-![]({{"/images/ML_6_5.png"|absolute_url}})
 
 The above chart clearly describes the effect of smoking on the outcome.
 The smoking is having a negative effect and reduces the lifespan.
