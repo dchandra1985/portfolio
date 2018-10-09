@@ -41,7 +41,7 @@ import matplotlib.pyplot as plt
 china1965 = pd.read_csv('income-1965-china.csv')
 usa1965 = pd.read_csv('income-1965-usa.csv')
 ```
-Download the [data-3.zip](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/data-3.zip)
+Download the [data-3.zip](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/data-3.zip?raw=true)
 
 ```python
 china1965.info()
