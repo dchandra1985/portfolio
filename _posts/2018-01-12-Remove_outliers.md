@@ -47,7 +47,7 @@ sns.boxplot(data=data,
 ```
 
 
-![]({{"/images/ML_4_1.png"|absolute_url}})
+<img src="/images/ML_4_1.png">
 
 
 ## Remove outliers
@@ -71,4 +71,4 @@ sns.boxplot(data=final_list,
 ```
 
 
-![]({{"/images/ML_4_2.png"|absolute_url}})
+<img src="/images/ML_4_2.png">
