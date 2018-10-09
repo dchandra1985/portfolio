@@ -24,7 +24,7 @@ Basically data is divided into two types.
   
 Below picture shows the detailed view of different types of data.
 
-![]({{"/images/Types_data.png"|absolute_url}})
+<img src="/images/Types_data.png">
 
 ### Numerical
 
