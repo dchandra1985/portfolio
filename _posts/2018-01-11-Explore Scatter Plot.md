@@ -176,8 +176,7 @@ plt.title('scatter Plot',fontweight="bold",fontsize = 20)
 plt.show()
 ```
 
-
-![]({{"/images/output_7_1_1.png"|absolute_url}})
+<img src="/images/output_7_1_1.png">
 
 
 Calculate a Pearson correlation coefficient and the p-value for testing non-correlation.
@@ -187,7 +186,8 @@ Positive correlations imply that as x increases, so does y.
 Negative correlations imply that as x increases, y decreases.
 The p-value roughly indicates the probability of an uncorrelated system.
 
-![]({{"/images/corr_coeff.png"|absolute_url}})
+
+<img src="/images/corr_coeff.png">
 
 
 ```python
@@ -230,8 +230,8 @@ def plotyear(year):
 plotyear(1980)
 ```
 
+<img src="/images/output_8_1_0.png">
 
-![]({{"/images/output_8_1_0.png"|absolute_url}})
 
 
 ## Interactive scatter Plot
@@ -264,7 +264,7 @@ def plotyear(year):
 interact(plotyear,year=widgets.IntSlider(min=1950,max=2015,step=1,value=1950))
 ```
 
-![]({{"/images/Peek 2018-09-22 17-11.gif"|absolute_url}})
+<img src="/images/Peek 2018-09-22 17-11.gif">
 
 ## Scatter Matrix Plot
 
@@ -276,6 +276,5 @@ data = visual.loc[visual.year == 2015,['log10_gdp_per_day','life_expectancy','ag
 pd.plotting.scatter_matrix(data,figsize=(9,9))
 ```
 
+<img src="/images/output_11_1.png">
 
-
-![]({{"/images/output_11_1.png"|absolute_url}})
