@@ -63,6 +63,7 @@ This measure gives an idea of the magnitude of the error, but no direction.It’
 
 
    ![]({{"/images/ML_7_4.png"|absolute_url}})
+   
 
  3. <b>Coefficient of determination</b>
     This measure provides an indication of the goodness of fit of a set of predictions to the actual values. It is also referered as R<sup>2</sup>.
