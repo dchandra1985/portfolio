@@ -60,9 +60,9 @@ This measure gives an idea of the magnitude of the error, but no direction.It’
  3. <b>Coefficient of determination</b>
     This measure provides an indication of the goodness of fit of a set of predictions to the actual values. It is also referered as R<sup>2</sup>.
 
-   ![]({{"/images/ML_7_3.png"|absolute_url}})
-   ![]({{"/images/ML_7_4.png"|absolute_url}})
-   ![]({{"/images/ML_7_5.png"|absolute_url}})
+   <img src="/images/ML_7_3.png">
+   <img src="/images/ML_7_4.png">
+   <img src="/images/ML_7_5.png">
 
 <p>
 Below code is a simple example of a linear regression.
@@ -177,12 +177,11 @@ if __name__ == "__main__":
     print(metrics.head())
 ```
 
-
-![]({{"/images/ML_7_1.png"|absolute_url}})
-
+   <img src="/images/ML_7_1.png">
 
 
-![]({{"/images/ML_7_2.png"|absolute_url}})
+   <img src="/images/ML_7_2.png">
+
 
 
        Mean squared error  Mean absolute error  Coefficient of determination
