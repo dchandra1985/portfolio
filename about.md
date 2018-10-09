@@ -9,7 +9,7 @@ google_analytics: UA-126196456-1
 # Welcome!
 
 <div class="left-col">
-    <img src={{"/images/vonkarman.jpg"|absolute_url}}>
+    <img src="images/vonkarman.jpg">
 </div>
 
 <div class="right-col">
