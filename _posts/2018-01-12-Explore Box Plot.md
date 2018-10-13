@@ -155,11 +155,11 @@ result:
 
 
 The box plot (a.k.a. box and whisker diagram) is a standardized way of displaying the distribution of data based on the five number summary:
-1) Minimum
-2) First quartile
-3) Median
-4) Third quartile
-5) Maximum
+*  Minimum
+*  First quartile
+*  Median
+*  Third quartile
+*  Maximum
 
 When reviewing a boxplot, an outlier is defined as a data point that is located outside the fences (“whiskers”) of the boxplot.
 (e.g: outside 1.5 times the interquartile range above the upper quartile and bellow the lower quartile)
@@ -198,9 +198,9 @@ North_America_emissions = data[data.Geography == 'North America'].CO2_Emissions
 Middle_East_emissions = data[data.Geography == 'Middle East'].CO2_Emissions
 ```
 
-Data Normalization
-1) Tranforms the data in the range between 0 to 1.
-2) Make the data consistent so that helps to compare the different data in a same scale format
+## Data Normalization
+*  Tranforms the data in the range between 0 to 1.
+*  Make the data consistent so that helps to compare the different data in a same scale format
 
 
 ```python
@@ -243,5 +243,5 @@ plt.show()
 <img src="/images/ML_4_2.png">
 
 
-###References :
+### References :
      https://www.eia.gov/
