@@ -56,13 +56,13 @@ This measure gives an idea of the magnitude of the error, but no direction.It’
 
  2. <b>Mean squared error</b>
    In statistics, the mean squared error (MSE) or mean squared deviation (MSD) of an estimator (of a procedure for estimating an unobserved quantity) measures the average of the squares of the errors—that is, the average squared difference between the estimated values and what is estimated.
-  
+
  3. <b>Coefficient of determination</b>
     This measure provides an indication of the goodness of fit of a set of predictions to the actual values. It is also referered as R<sup>2</sup>.
 
-   <img src="/images/ML_7_3.png">
-   <img src="/images/ML_7_4.png">
-   <img src="/images/ML_7_5.png">
+   <img src="/images/ML_8_3.png">
+   <img src="/images/ML_8_4.png">
+   <img src="/images/ML_8_5.png">
 
 <p>
 Below code is a simple example of a linear regression.
@@ -90,12 +90,14 @@ from sklearn.metrics import regression
 from sklearn import metrics
 ```
 
+
 ```python
 def read_data():
     data = pd.read_csv('data-scatter.csv')
     return data    
 ```
 Download the [data-scatter.csv](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/data-scatter.zip?raw=true)
+
 
 
 ```python
@@ -177,11 +179,11 @@ if __name__ == "__main__":
     print(metrics.head())
 ```
 
-   <img src="/images/ML_7_1.png">
+
+<img src="/images/ML_8_1.png">
 
 
-   <img src="/images/ML_7_2.png">
-
+<img src="/images/ML_8_2.png">
 
 
        Mean squared error  Mean absolute error  Coefficient of determination

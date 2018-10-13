@@ -23,13 +23,14 @@ This topic explains the method to understand the categorical data using the pie 
 Python library is a collection of functions and methods that allows you to perform many actions without writing your code.
 To make use of the functions in a module, you'll need to import the module with an import statement.
 
+
 ```python
 import numpy as np
 import scipy.stats
 import pandas as pd
 ```
-
 Matplotlib is a magic function in IPython.Matplotlib inline sets the backend of matplotlib to the 'inline' backend. With this backend, the output of plotting commands is displayed inline within frontends like the Jupyter notebook, directly below the code cell that produced it.
+
 
 ```python
 import matplotlib
@@ -39,70 +40,214 @@ import matplotlib.pyplot as plt
 
 
 ```python
-smoking = pd.read_csv('whickham.csv')
+data = pd.read_csv('smoking.csv')
 ```
-Download the [data-4.zip](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/data-4.zip?raw=true)
+Download the [smoking.zip](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/smoking.zip?raw=true)
+
 
 ```python
-smoking.info()
+data.info()
 ```
 
 result:
 
     <class 'pandas.core.frame.DataFrame'>
-    RangeIndex: 1314 entries, 0 to 1313
-    Data columns (total 3 columns):
-    outcome    1314 non-null object
-    smoker     1314 non-null object
-    age        1314 non-null int64
-    dtypes: int64(1), object(2)
-    memory usage: 30.9+ KB
-
-## Hypothesis
-
-The given data represents the number of smokers and non-smokers with different age groups and their survival.
-Let's assume the smoking is causing an effect on the lifespan. Therefore, we analyze the data using pie and bar chart to visualize whether the given data explains an effect on the lifespan.
+    RangeIndex: 8 entries, 0 to 7
+    Data columns (total 4 columns):
+    Geography      8 non-null object
+    Death          8 non-null object
+    Year           8 non-null int64
+    No_of_death    8 non-null float64
+    dtypes: float64(1), int64(1), object(2)
+    memory usage: 336.0+ bytes
 
 
 
 ```python
-groupby_smoker = smoking.groupby("smoker").outcome.value_counts(normalize=True)
+data.head(8)
 ```
 
 
-```python
-groupby_smoker
-```
+
 
 result:
 
-    smoker  outcome
-    No      Alive      0.685792
-            Dead       0.314208
-    Yes     Alive      0.761168
-            Dead       0.238832
-    Name: outcome, dtype: float64
-    
-    
-The previous group-by information is indicating an idea that the survival rate is increased due to smoking.
-This is completely unrealistic. This may be due to the data is biased so that we are unable to analyze properly.
-Therefore, we will implement the group-by option to segregate the data further and visualize the data using pie and bar chart.
+<div style="overflow-x:auto;">
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Geography</th>
+      <th>Death</th>
+      <th>Year</th>
+      <th>No_of_death</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Central Asia</td>
+      <td>Direct</td>
+      <td>2016</td>
+      <td>10850.849556</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>East Asia</td>
+      <td>Direct</td>
+      <td>2016</td>
+      <td>136695.858414</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>South Asia</td>
+      <td>Direct</td>
+      <td>2016</td>
+      <td>163215.353336</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Southeast Asia</td>
+      <td>Direct</td>
+      <td>2016</td>
+      <td>88841.171786</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Central Asia</td>
+      <td>Indirect</td>
+      <td>2016</td>
+      <td>1186.888912</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>East Asia</td>
+      <td>Indirect</td>
+      <td>2016</td>
+      <td>14004.767712</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>South Asia</td>
+      <td>Indirect</td>
+      <td>2016</td>
+      <td>24297.978568</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Southeast Asia</td>
+      <td>Indirect</td>
+      <td>2016</td>
+      <td>9064.151679</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+
+```python
+groupby_type = data.groupby(["Death","Geography"]).No_of_death.value_counts(normalize=True)
+```
+
+
+```python
+groupby_type
+```
+
+
+result:
+
+    Death     Geography       No_of_death  
+    Direct    Central Asia    10850.849556     1.0
+              East Asia       136695.858414    1.0
+              South Asia      163215.353336    1.0
+              Southeast Asia  88841.171786     1.0
+    Indirect  Central Asia    1186.888912      1.0
+              East Asia       14004.767712     1.0
+              South Asia      24297.978568     1.0
+              Southeast Asia  9064.151679      1.0
+    Name: No_of_death, dtype: float64
+
 
 ## Pie chart
 
 A pie chart is a circular statistical graphic, which is divided into slices to illustrate numerical proportion.
 
+
 ```python
-plt.figure(figsize=(10,4))
+plt.figure(figsize=(15,7.5))
 plt.subplot(1,2,1);
-smoking.outcome.value_counts().plot(kind='pie',colors=['C1','C2'],legend=['Alive','Dead']);
-plt.title('outcome',fontweight='bold',fontsize = 15)
+data[data.Death == 'Direct'].No_of_death.plot(kind='pie',startangle=90,autopct='%1.1f%%',colors=['C0','C1','C2','C3'],labels = ['Central Asia', 'East Asia', 'South Asia', 'Southeast Asia'],textprops={'fontweight':'bold','fontsize': 12});
+plt.legend(loc=3,fontsize=10)
+plt.ylabel('')
+plt.title('Death due to direct smoking',fontweight="bold",fontsize = 20)
+plt.axis('equal')
+
 plt.subplot(1,2,2);
-smoking.smoker.value_counts().plot(kind='pie',colors=['C3','C4'],legend=['Yes','No']);
-plt.title('smoker',fontweight='bold',fontsize = 15)
+data[data.Death == 'Indirect'].No_of_death.plot(kind='pie',startangle=90,autopct='%1.1f%%',colors=['C0','C1','C2','C3'],labels = ['Central Asia', 'East Asia', 'South Asia', 'Southeast Asia'],textprops={'fontweight':'bold','fontsize': 12});
+plt.legend(loc=3,fontsize=10)
+plt.ylabel('')
+plt.title('Death due to passive smoking',fontweight="bold",fontsize = 20)
+plt.axis('equal')
+
+plt.subplots_adjust(wspace=1)
+plt.show()
 ```
 
-<img src="/images/ML_6_1.png">
+
+<img src="/images/ML_7_1.png">
+
+
+
+```python
+hypothesis = data[(data.Geography == "South Asia")]
+hypothesis.set_index("Death",drop=True,inplace=True)
+```
+
+
+```python
+hypothesis
+```
+
+
+
+result:
+
+<div style="overflow-x:auto;">
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Geography</th>
+      <th>Year</th>
+      <th>No_of_death</th>
+    </tr>
+    <tr>
+      <th>Death</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Direct</th>
+      <td>South Asia</td>
+      <td>2016</td>
+      <td>163215.353336</td>
+    </tr>
+    <tr>
+      <th>Indirect</th>
+      <td>South Asia</td>
+      <td>2016</td>
+      <td>24297.978568</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 ## Bar Chart
@@ -110,215 +255,20 @@ plt.title('smoker',fontweight='bold',fontsize = 15)
 A bar chart or bar graph is a chart or graph that presents categorical data with rectangular bars with heights or lengths proportional to the values that they represent. The bars can be plotted vertically or horizontally. A vertical bar chart is sometimes called a line graph.
 
 ```python
-groupby_smoker.plot(kind='bar')
-plt.title('Unstacked Bar Chart',fontweight='bold',fontsize = 15)
-plt.xlabel('smoker-outcome',fontweight='bold',fontsize = 10)
+# Bar Chart
+
+plt.figure(figsize=(8,4))
+hypothesis.No_of_death.plot(kind='bar')
+plt.title('Cause of death due to smoking in South Asia',fontweight='bold',fontsize = 20)
+plt.xlabel('Smoking Effect',fontweight='bold',fontsize = 15)
+plt.ylabel('No of death',fontweight='bold',fontsize = 15)
+plt.xticks(fontweight="bold",fontsize = 10)
+plt.yticks(fontweight="bold",fontsize = 10)
+plt.show()
 ```
 
-<img src="/images/ML_6_2.png">
+<img src="/images/ML_7_2.png">
 
 
-```python
-groupby_smoker.unstack().plot(kind='bar',stacked=True)
-plt.title('Stacked Bar Chart',fontweight='bold',fontsize = 15)
-plt.xlabel('smoker',fontweight='bold',fontsize = 10)
-plt.ylabel('% of alive/dead',fontweight='bold',fontsize = 10)
-```
-
-<img src="/images/ML_6_3.png">
-
-
-<p>
-The above chart illustrates that the claimed hypothesis (smoking habit is having an effect on the lifespan.) is rejected. The reason may be due to data bias.</p>
-<p>
-To understand and study the effect of smoker variable to the outcome, we have to further segregate the data with respect to smoker and age.
-This will help us to study the effect of smoking with respect to the different age groups and their survival.
-</p>
-
-Here the data is grouped using several age groups. The primary reason is the outcome data(Alive/dead) represents all the age groups. But we are focussed only on studying the effect on smoking. People are dying after 50 or more age groups may not be due to smoking. That may be one of the factors. Therefore, we are neglecting the age groups after 50 for this analysis. This is one type of data cleaning.
-
-```python
-smoking['ageGroup'] = pd.cut(smoking.age,[0,30,40,50],labels=['0-30','30-40','40-50'])
-```
-
-
-```python
-groupby_age = smoking.groupby(['ageGroup','smoker']).outcome.value_counts(normalize=True)
-```
-
-
-```python
-groupby_age
-```
-
-result:
-
-    ageGroup  smoker  outcome
-    0-30      No      Alive      0.981818
-                      Dead       0.018182
-              Yes     Alive      0.975610
-                      Dead       0.024390
-    30-40     No      Alive      0.955224
-                      Dead       0.044776
-              Yes     Alive      0.940678
-                      Dead       0.059322
-    40-50     No      Alive      0.867470
-                      Dead       0.132530
-              Yes     Alive      0.828125
-                      Dead       0.171875
-    Name: outcome, dtype: float64
-
-
-
-
-```python
-groupby_age.unstack().plot(kind='bar',stacked=True)
-plt.title('UnStacked Bar Chart',fontweight='bold',fontsize = 15)
-plt.xlabel('smoker-agegroup',fontweight='bold',fontsize = 10)
-```
-
-<img src="/images/ML_6_4.png">
-
-
-
-```python
-groupby_age.unstack().drop("Dead",axis=1).unstack()
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr>
-      <th>outcome</th>
-      <th colspan="2" halign="left">Alive</th>
-    </tr>
-    <tr>
-      <th>smoker</th>
-      <th>No</th>
-      <th>Yes</th>
-    </tr>
-    <tr>
-      <th>ageGroup</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0-30</th>
-      <td>0.981818</td>
-      <td>0.975610</td>
-    </tr>
-    <tr>
-      <th>30-40</th>
-      <td>0.955224</td>
-      <td>0.940678</td>
-    </tr>
-    <tr>
-      <th>40-50</th>
-      <td>0.867470</td>
-      <td>0.828125</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
-byage = groupby_age.unstack().drop("Dead",axis=1).unstack()
-
-byage.columns = ["No","Yes"]
-byage.columns.name = "smoker"
-```
-
-
-```python
-byage
-```
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>smoker</th>
-      <th>No</th>
-      <th>Yes</th>
-    </tr>
-    <tr>
-      <th>ageGroup</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0-30</th>
-      <td>0.981818</td>
-      <td>0.975610</td>
-    </tr>
-    <tr>
-      <th>30-40</th>
-      <td>0.955224</td>
-      <td>0.940678</td>
-    </tr>
-    <tr>
-      <th>40-50</th>
-      <td>0.867470</td>
-      <td>0.828125</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
-byage.plot(kind='bar')
-plt.title('Stacked Bar Chart',fontweight='bold',fontsize = 15)
-plt.xlabel('Agegroup',fontweight='bold',fontsize = 10)
-plt.ylabel('% of alive/dead',fontweight='bold',fontsize = 10)
-```
-
-<img src="/images/ML_6_5.png">
-
-
-The above chart clearly describes the effect of smoking on the outcome.
-The smoking is having a negative effect and reduces the lifespan.
-Therefore, the claimed hypothesis is true.
+###References :
+   https://ourworldindata.org/smoking

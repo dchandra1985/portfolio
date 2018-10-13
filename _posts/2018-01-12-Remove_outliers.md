@@ -31,7 +31,6 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 ```
 
-## Data ingestion
 
 ```python
 arr = [10, 386, 479, 627, 20, 523, 482, 483, 542, 699, 535, 617, 577, 471, 615, 583, 441, 562, 563, 527, 453, 530, 433, 541, 585, 704, 443, 569, 430, 637, 331, 511, 552, 496, 484, 566, 554, 472, 335, 440, 579, 341, 545, 615, 548, 604, 439, 556, 442, 461, 624, 611, 444, 578, 405, 487, 490, 496, 398, 512, 422, 455, 449, 432, 607, 679, 434, 597, 639, 565, 415, 486, 668, 414, 665, 763, 557, 304, 404, 454, 689, 610, 483, 441, 657, 590, 492, 476, 437, 483, 529, 363, 711, 543]
@@ -41,14 +40,14 @@ data = np.array(arr,dtype=float)
 ## Identify outliers visually
 
 ```python
+# Plot box plot to find out the outliers using a single feature or variable
 sns.boxplot(data=data,
                  width=0.5,
                  palette="colorblind")
 ```
 
 
-<img src="/images/ML_4_1.png">
-
+<img src="/images/ML_5_1.png">
 
 ## Remove outliers
 
@@ -64,11 +63,13 @@ final_list = [x for x in final_list if (x < mean + 2 * sd)]
 
 ```
 
+
 ```python
+# Plot box plot to find out the outliers using a single feature or variable
 sns.boxplot(data=final_list,
                  width=0.5,
                  palette="colorblind")
 ```
 
 
-<img src="/images/ML_4_2.png">
+<img src="/images/ML_5_2.png">

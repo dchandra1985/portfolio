@@ -23,12 +23,13 @@ This topic explains the method to identify the distribution of a continuous vari
 Python library is a collection of functions and methods that allows you to perform many actions without writing your code.
 To make use of the functions in a module, you'll need to import the module with an import statement.
 
+
 ```python
 import numpy as np
 import scipy.stats
 import pandas as pd
 ```
-Matplotlib is a magic function in IPython.Matplotlib inline sets the backend of matplotlib to the 'inline' backend. With this backend, the output of plotting commands is displayed inline within frontends like the Jupyter notebook, directly below the code cell that produced it.
+
 
 ```python
 import matplotlib
@@ -38,24 +39,86 @@ import matplotlib.pyplot as plt
 
 
 ```python
-china1965 = pd.read_csv('income-1965-china.csv')
-usa1965 = pd.read_csv('income-1965-usa.csv')
+data = pd.read_csv('petroleum.csv')
 ```
-Download the [data-3.zip](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/data-3.zip?raw=true)
+Download the [petroleum.zip](https://github.com/dchandra1985/portfolio/blob/gh-pages/data/petroleum.zip?raw=true)
 
 ```python
-china1965.info()
+data.info()
 ```
 
 result:
 
     <class 'pandas.core.frame.DataFrame'>
-    RangeIndex: 1000 entries, 0 to 999
-    Data columns (total 2 columns):
-    income          1000 non-null float64
-    log10_income    1000 non-null float64
-    dtypes: float64(2)
-    memory usage: 15.7 KB
+    RangeIndex: 216 entries, 0 to 215
+    Data columns (total 5 columns):
+    Year             216 non-null int64
+    Geography        216 non-null object
+    Import           216 non-null float64
+    Export           216 non-null float64
+    CO2 Emissions    216 non-null float64
+    dtypes: float64(3), int64(1), object(1)
+    memory usage: 8.5+ KB
+
+
+
+```python
+data.head(4)
+```
+
+
+
+
+result:
+
+<div style="overflow-x:auto;">
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Year</th>
+      <th>Geography</th>
+      <th>Import</th>
+      <th>Export</th>
+      <th>CO2 Emissions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1980</td>
+      <td>Africa</td>
+      <td>618.184</td>
+      <td>5428.078</td>
+      <td>525.605046</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1981</td>
+      <td>Africa</td>
+      <td>609.270</td>
+      <td>3964.097</td>
+      <td>519.408287</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1982</td>
+      <td>Africa</td>
+      <td>557.209</td>
+      <td>3458.547</td>
+      <td>558.221545</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1983</td>
+      <td>Africa</td>
+      <td>477.787</td>
+      <td>3394.148</td>
+      <td>586.002081</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ## Histogram
 
@@ -63,16 +126,46 @@ A histogram is an accurate representation of the distribution of numerical data.
 
 
 ```python
-china1965.income.plot(kind='hist',histtype='step',bins=30)
-plt.axvline(china1965.income.mean(),c='C1')
-plt.axvline(china1965.income.median(),c='C2',linestyle='--')
-plt.axvline(china1965.income.quantile(0.25),c='C3',linestyle=':')
-plt.axvline(china1965.income.quantile(0.75),c='C3',linestyle=':')
-plt.title("Histogram",fontweight="bold",fontsize=15)
+plt.figure(figsize=(20,5))
+plt.subplot(1,2,1);
+data.Import.plot(kind='hist',histtype='step',bins=50)
+plt.axvline(data.Import.mean(),c='red',label = 'Mean')
+plt.axvline(data.Import.median(),c='green',linestyle='--',label = 'Median')
+plt.axvline(data.Import.quantile(0.25),c='blue',linestyle=':',label = '0.25 quantile')
+plt.axvline(data.Import.quantile(0.75),c='blue',linestyle=':',label = '0.75 quantile')
+plt.axis(xmin=-100,xmax=25000)
+plt.title('Petroleum Import',fontweight="bold",fontsize = 20)
+plt.xlabel('barrels per day',fontweight="bold",fontsize = 15)
+plt.ylabel('Frequency',fontweight="bold",fontsize = 15)
+plt.xticks(fontweight="bold",fontsize = 10)
+plt.yticks(fontweight="bold",fontsize = 10)
+plt.legend(loc=1, prop={'size': 15})
+
+plt.subplot(1,2,2);
+data.Export.plot(kind='hist',histtype='step',bins=50)
+plt.axvline(data.Export.mean(),c='red',label = 'Mean')
+plt.axvline(data.Export.median(),c='green',linestyle='--',label = 'Median')
+plt.axvline(data.Export.quantile(0.25),c='blue',linestyle=':',label = '0.25 quantile')
+plt.axvline(data.Export.quantile(0.75),c='blue',linestyle=':',label = '0.75 quantile')
+plt.axis(xmin=-100,xmax=25000)
+plt.title('Petroleum Export',fontweight="bold",fontsize = 20)
+plt.xlabel('barrels per day',fontweight="bold",fontsize = 15)
+plt.ylabel('Frequency',fontweight="bold",fontsize = 15)
+plt.xticks(fontweight="bold",fontsize = 10)
+plt.yticks(fontweight="bold",fontsize = 10)
+plt.legend(loc=1, prop={'size': 15})
+
+plt.subplots_adjust(wspace=0.5)
+plt.show()
 ```
 
-<img src="/images/ML_5_1.png">
 
+<img src="/images/ML_6_1.png">
+
+
+The above distribution comparision shows that the most of the export data is around 2100 and 5300 barrels per day.
+The most of the petroleum import is around 750 and 11000 barrels per day.
+But as per the calculated median from the above two distributions, the import data is more positively skewed due to outliers compared to export data.
 
 ## Probability density function:
 
@@ -81,34 +174,32 @@ plt.title("Histogram",fontweight="bold",fontsize=15)
 *  The probability density function is nonnegative everywhere
 *  The integral over the entire space or area under the curve is equal to one.
 
-
-<img src="/images/PDF1.png">
+<img src="/images/PDF.png">
 
 
 ```python
-china1965.income.plot(kind='hist',histtype='step',bins=30,density=True)
-china1965.income.plot.density(bw_method=.4)
-plt.axis(xmin=0,xmax=3)
-plt.title("Probability density curve",fontweight="bold",fontsize=15)
+# Probability density curve
+
+plt.figure(figsize=(10,5))
+data.Export.plot(kind='hist',histtype='step',bins=30,density=True)
+data.Export.plot.density(bw_method=.09)
+plt.axis(xmin=-0,xmax=20000)
+plt.title("Probability density curve",fontweight="bold",fontsize=20)
+plt.xlabel('barrels per day',fontweight="bold",fontsize = 15)
+plt.ylabel('Density',fontweight="bold",fontsize = 15)
+plt.xticks(fontweight="bold",fontsize = 10)
+plt.yticks(fontweight="bold",fontsize = 10)
+plt.legend(loc=1, prop={'size': 15})
+plt.show()
 ```
 
-<img src="/images/ML_5_2.png">
+
+<img src="/images/ML_6_2.png">
 
 
 The above distribution is positive skewed.
 A distribution is positively skewed if the scores fall toward the lower side of the scale and there are very few higher scores.
 Positively skewed data is also referred to as skewed to the right because that is the direction of the 'long tail end' of the chart.
 
-
-
-## Comparing the distributions between different continuous variable
-
-```python
-china1965.log10_income.plot.hist(histtype='step',bins=20)
-usa1965.log10_income.plot.hist(histtype='step',bins=20)
-levels = [0.25,0.5,1,2,4,8,16,32,64]
-plt.xticks(np.log10(levels),levels);
-plt.title("China1965 Vs USA1965 income distribution",fontweight="bold",fontsize=15)
-```
-
-<img src="/images/ML_5_3.png">
+###References :
+    https://www.eia.gov/
