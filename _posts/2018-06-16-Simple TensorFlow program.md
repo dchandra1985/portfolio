@@ -3,9 +3,10 @@ layout: post
 title: "TensorFlow basic program"
 categories:
   - Machine Learning
+  - Deep Learning
 tags:
   - TensorFlow
-  - Deep Learning
+
 
 
 last_modified_at: 2018-09-23
