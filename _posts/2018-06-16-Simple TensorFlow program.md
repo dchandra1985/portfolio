@@ -5,6 +5,7 @@ categories:
   - Machine Learning
 tags:
   - TensorFlow
+  - Deep Learning
 
 
 last_modified_at: 2018-09-23
