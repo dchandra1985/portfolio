@@ -34,7 +34,7 @@ article + *, .post-body ~ section {
 
 // h1-size h2
 h2.post-title, h2.page-title {
-  font-size: 4rem;
+  font-size: 1.5rem;
 }
 
 // Meta data line below post title
@@ -45,7 +45,7 @@ h2.post-title, h2.page-title {
 }
 
 .post-tags a {
-  font-size: 0.8em;
+  font-size: 3em;
   margin-right: 0.5rem;
   white-space:nowrap;
   .tag-name { text-transform: capitalize; }
