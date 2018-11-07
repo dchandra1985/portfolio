@@ -16,7 +16,7 @@ google_analytics: UA-126196456-1
 
     <p>Thank you for visiting my personal technology blog</p>
 
-    <p>I am Dinesh Chandrasekaran, ASQ-CSSBB, PMP, PMI-ACP, SAFe® 4 Agilist (SA), SAFe® 4 Practitioner (SP). I have completed Master of Science offered jointly by Ecole Centrale de Lille, Ecole Nationale Supérieure de Mécanique et d’Aérotechnique de Poitiers and Ecole Nationale Supérieure d’Ingénieurs de Poitiers, France. The Master Program majorly focussed on Turbulence, Mathematical Modeling and Computational Techniques</p>
+    <p>I am Dinesh Chandrasekaran, ASQ-CSSBB, PMP, PMI-ACP, SAFe® 4 Agilist (SA), SAFe® 4 Practitioner (SP). I have completed Master of Science offered jointly by Ecole Centrale de Lille, Ecole Nationale Supérieure de Mécanique et d’Aérotechnique de Poitiers and Ecole Nationale Supérieure d’Ingénieurs de Poitiers, France. The Master Program majorly focussed on Turbulence, Mathematical Modeling, Analytical and Computational Techniques</p>
 
     <p>I have around nine years of industry and research experience in Data Science and Project Management. Experienced in transforming the project teams to adopt the agile mindset and best practices from Scrum, Lean, Kanban etc. Experienced in developing Machine Learning algorithms and Statistical Analysis to improve the product performance.</p>
 
