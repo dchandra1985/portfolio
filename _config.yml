@@ -6,7 +6,7 @@ highlighter:      rouge
 title:            Data Science
 tagline:          'Blog by dchandra'
 description:      'Blog by'
-info:             '<br>Dinesh Chandrasekaran<br><font size="3">International Master in Turbulence,<br>ASQ-CSSBB, PMP, PMI-ACP,<br> SAFe® 4 Agilist (SA),<br> SAFe® 4 Practitioner (SP)<br></font>'
+info:             '<br>Dinesh Chandrasekaran<br><font size="3">M.Sc., France,<br>ASQ-CSSBB, PMP, PMI-ACP,<br> SAFe® 4 Agilist (SA),<br> SAFe® 4 Practitioner (SP)<br></font>'
 url:              https://dchandra1985.github.io
 baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
