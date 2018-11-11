@@ -10,6 +10,7 @@ tags:
   - TensorFlow
   - image processing
   - convolution neural network
+  - classification
 
 
 last_modified_at: 2018-11-12
@@ -368,4 +369,4 @@ with tf.Session() as sess:
 
 
 
-<img src="/images/output_15_18.png">
+<img src="/images/output_15_19.png">
