@@ -8,13 +8,16 @@ tags:
   - python
   - classification
   - image processing
+  - neural network
+  - convolution neural network
+  - keras
 
 
-last_modified_at: 2018-09-27
+last_modified_at: 2018-11-12
 excerpt_separator: <!-- more -->
 ---
 
-This topic explains the image classification using simple neural network.
+This topic explains the image classification using simple neural network with Keras.
 <!-- more -->
 
 ```python
@@ -31,9 +34,9 @@ from keras.utils import to_categorical
 from keras.datasets import mnist
 ```
 
+
 ```python
-n_rows = 28
-n_cols= 28
+img_size = 28
 n_class = 10
 batch_size = 32
 epochs = 10
@@ -44,9 +47,6 @@ epochs = 10
 # Load data
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
 
-X_test_vis = X_test[1000:,:,:]
-y_test_vis  = y_test[1000:]
-
 X_train = X_train[:10000,:,:]
 X_test = X_test[:1000,:,:]
 y_train = y_train[:10000]
@@ -56,9 +56,9 @@ y_test  = y_test[:1000]
 
 ```python
 # Reshape data
-X_train = X_train.reshape((X_train.shape[0], n_rows * n_cols))
+X_train = X_train.reshape((X_train.shape[0], img_size * img_size))
 X_train = X_train.astype('float32') / 255
-X_test = X_test.reshape((X_test.shape[0], n_rows * n_cols))
+X_test = X_test.reshape((X_test.shape[0], img_size * img_size))
 X_test = X_test.astype('float32') / 255
 
 # Categorically encode labels
@@ -70,7 +70,7 @@ y_test = to_categorical(y_test, n_class)
 ```python
 # Build neural network
 model = models.Sequential()
-model.add(Dense(512, activation='relu', input_shape=(n_rows*n_cols,)))
+model.add(Dense(512, activation='relu', input_shape=(img_size*img_size,)))
 model.add(Dropout(0.5))
 model.add(Dense(256, activation='relu'))
 model.add(Dropout(0.25))
@@ -96,25 +96,25 @@ model.fit(X_train, y_train,
 
     Train on 10000 samples, validate on 1000 samples
     Epoch 1/10
-    10000/10000 [==============================] - 4s 447us/step - loss: 1.0130 - acc: 0.7116 - val_loss: 0.5727 - val_acc: 0.8500
+    10000/10000 [==============================] - 4s 382us/step - loss: 0.9976 - acc: 0.7107 - val_loss: 0.5790 - val_acc: 0.8380
     Epoch 2/10
-    10000/10000 [==============================] - 3s 333us/step - loss: 0.5917 - acc: 0.8287 - val_loss: 0.4688 - val_acc: 0.8720
+    10000/10000 [==============================] - 3s 323us/step - loss: 0.5869 - acc: 0.8285 - val_loss: 0.4716 - val_acc: 0.8680
     Epoch 3/10
-    10000/10000 [==============================] - 3s 332us/step - loss: 0.5073 - acc: 0.8521 - val_loss: 0.4199 - val_acc: 0.8810
+    10000/10000 [==============================] - 3s 295us/step - loss: 0.4939 - acc: 0.8561 - val_loss: 0.4218 - val_acc: 0.8810
     Epoch 4/10
-    10000/10000 [==============================] - 3s 332us/step - loss: 0.4560 - acc: 0.8656 - val_loss: 0.3922 - val_acc: 0.8890
+    10000/10000 [==============================] - 3s 299us/step - loss: 0.4550 - acc: 0.8683 - val_loss: 0.3924 - val_acc: 0.8880
     Epoch 5/10
-    10000/10000 [==============================] - 3s 337us/step - loss: 0.4225 - acc: 0.8776 - val_loss: 0.3717 - val_acc: 0.8890
+    10000/10000 [==============================] - 3s 291us/step - loss: 0.4244 - acc: 0.8747 - val_loss: 0.3755 - val_acc: 0.8890
     Epoch 6/10
-    10000/10000 [==============================] - 3s 337us/step - loss: 0.4046 - acc: 0.8820 - val_loss: 0.3570 - val_acc: 0.8910
+    10000/10000 [==============================] - 3s 291us/step - loss: 0.4080 - acc: 0.8803 - val_loss: 0.3582 - val_acc: 0.8960
     Epoch 7/10
-    10000/10000 [==============================] - 3s 342us/step - loss: 0.3837 - acc: 0.8887 - val_loss: 0.3461 - val_acc: 0.9020
+    10000/10000 [==============================] - 3s 321us/step - loss: 0.3839 - acc: 0.8891 - val_loss: 0.3448 - val_acc: 0.8970
     Epoch 8/10
-    10000/10000 [==============================] - 3s 342us/step - loss: 0.3735 - acc: 0.8911 - val_loss: 0.3395 - val_acc: 0.8980
+    10000/10000 [==============================] - 3s 348us/step - loss: 0.3702 - acc: 0.8935 - val_loss: 0.3369 - val_acc: 0.9020
     Epoch 9/10
-    10000/10000 [==============================] - 4s 367us/step - loss: 0.3506 - acc: 0.9005 - val_loss: 0.3303 - val_acc: 0.9020
+    10000/10000 [==============================] - 3s 331us/step - loss: 0.3488 - acc: 0.8988 - val_loss: 0.3278 - val_acc: 0.9020
     Epoch 10/10
-    10000/10000 [==============================] - 4s 357us/step - loss: 0.3427 - acc: 0.8985 - val_loss: 0.3233 - val_acc: 0.9010
+    10000/10000 [==============================] - 3s 331us/step - loss: 0.3437 - acc: 0.8995 - val_loss: 0.3196 - val_acc: 0.9040
 
 
 
@@ -127,8 +127,8 @@ print('Test accuracy:', score[1])
 model.summary()
 ```
 
-    Test loss: 0.32332046699523925
-    Test accuracy: 0.901
+    Test loss: 0.31958454704284667
+    Test accuracy: 0.904
     _________________________________________________________________
     Layer (type)                 Output Shape              Param #   
     =================================================================
@@ -150,39 +150,37 @@ model.summary()
 
 
 ```python
-X_test_vis = X_test_vis.reshape((X_test_vis.shape[0], 28 * 28))
-y_test_vis = y_test_vis.reshape((y_test_vis.shape[0]))
+X_test = X_test.reshape((X_test.shape[0], img_size*img_size))
 
-indices = random.sample(range(X_test_vis.shape[0]),k=10)
-X_test_samples = X_test_vis[indices]
-y_test_samples = y_test_vis[indices]
+indices = random.sample(range(X_test.shape[0]),k=10)
+X_test_samples = X_test[indices]
+y_test_samples = y_test[indices]
 ```
 
 
 ```python
 for i in range(10):
   predict = model.predict_classes(X_test_samples[i].reshape((1,784)))
-  actual = y_test_samples[i]
+  actual = np.argmax(y_test_samples[i])
   plt.imshow(X_test_samples[i].reshape(28,28),cmap="binary")
   print("Actual Class :{}, Predicted Class: {}".format(actual,predict[0]))
   plt.show()
 ```
 
-    Actual Class :9, Predicted Class: 9
-
+    Actual Class :4, Predicted Class: 4
 
 
 <img src="/images/output_10_1.png">
 
 
-    Actual Class :0, Predicted Class: 0
+    Actual Class :3, Predicted Class: 3
 
 
 
 <img src="/images/output_10_3.png">
 
 
-    Actual Class :3, Predicted Class: 3
+    Actual Class :8, Predicted Class: 8
 
 
 
@@ -196,7 +194,7 @@ for i in range(10):
 <img src="/images/output_10_7.png">
 
 
-    Actual Class :4, Predicted Class: 4
+    Actual Class :8, Predicted Class: 8
 
 
 
@@ -210,21 +208,21 @@ for i in range(10):
 <img src="/images/output_10_11.png">
 
 
-    Actual Class :9, Predicted Class: 9
+    Actual Class :8, Predicted Class: 8
 
 
 
 <img src="/images/output_10_13.png">
 
 
-    Actual Class :2, Predicted Class: 2
+    Actual Class :0, Predicted Class: 0
 
 
 
 <img src="/images/output_10_15.png">
 
 
-    Actual Class :3, Predicted Class: 3
+    Actual Class :2, Predicted Class: 2
 
 
 

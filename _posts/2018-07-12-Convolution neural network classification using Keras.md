@@ -8,15 +8,16 @@ tags:
   - python
   - Keras
   - image processing
+  - convolution neural network
+  - neural network
 
 
-last_modified_at: 2018-09-29
+last_modified_at: 2018-11-12
 excerpt_separator: <!-- more -->
 ---
 
 This topic explains the image classification using CNN with Keras.
 <!-- more -->
-
 ```python
 import numpy as np
 import tensorflow as tf
@@ -33,21 +34,17 @@ from keras.datasets import mnist
 
 
 ```python
-n_rows = 28
-n_cols= 28
+img_size = 28
 n_class = 10
 batch_size = 32
 epochs = 10
-input_shape = (n_rows, n_cols, 1)
+input_shape = (img_size,img_size,1)
 ```
 
 
 ```python
 # Load data
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
-
-X_test_vis = X_test[1000:,:,:]
-y_test_vis  = y_test[1000:]
 
 X_train = X_train[:10000,:,:]
 X_test = X_test[:1000,:,:]
@@ -58,9 +55,9 @@ y_test  = y_test[:1000]
 
 ```python
 # Reshape data
-X_train = X_train.reshape((X_train.shape[0],n_rows, n_cols, 1))
+X_train = X_train.reshape((X_train.shape[0], img_size,img_size, 1))
 X_train = X_train.astype('float32') / 255
-X_test = X_test.reshape((X_test.shape[0], n_rows, n_cols, 1))
+X_test = X_test.reshape((X_test.shape[0], img_size,img_size, 1))
 X_test = X_test.astype('float32') / 255
 
 # Categorically encode labels
@@ -138,25 +135,25 @@ model.fit(X_train, y_train,
 
     Train on 10000 samples, validate on 1000 samples
     Epoch 1/10
-    10000/10000 [==============================] - 22s 2ms/step - loss: 1.6979 - acc: 0.4131 - val_loss: 0.9317 - val_acc: 0.7090
+    10000/10000 [==============================] - 22s 2ms/step - loss: 1.6401 - acc: 0.4449 - val_loss: 0.8522 - val_acc: 0.7430
     Epoch 2/10
-    10000/10000 [==============================] - 21s 2ms/step - loss: 0.9465 - acc: 0.6807 - val_loss: 0.6363 - val_acc: 0.8100
+    10000/10000 [==============================] - 21s 2ms/step - loss: 0.9093 - acc: 0.7138 - val_loss: 0.6227 - val_acc: 0.8170
     Epoch 3/10
-    10000/10000 [==============================] - 21s 2ms/step - loss: 0.7626 - acc: 0.7433 - val_loss: 0.5335 - val_acc: 0.8470
+    10000/10000 [==============================] - 21s 2ms/step - loss: 0.7399 - acc: 0.7683 - val_loss: 0.5140 - val_acc: 0.8530
     Epoch 4/10
-    10000/10000 [==============================] - 21s 2ms/step - loss: 0.6710 - acc: 0.7767 - val_loss: 0.4704 - val_acc: 0.8690
+    10000/10000 [==============================] - 21s 2ms/step - loss: 0.6561 - acc: 0.7965 - val_loss: 0.4454 - val_acc: 0.8740
     Epoch 5/10
-    10000/10000 [==============================] - 22s 2ms/step - loss: 0.6082 - acc: 0.8000 - val_loss: 0.4314 - val_acc: 0.8770
+    10000/10000 [==============================] - 21s 2ms/step - loss: 0.5913 - acc: 0.8184 - val_loss: 0.4005 - val_acc: 0.8860
     Epoch 6/10
-    10000/10000 [==============================] - 23s 2ms/step - loss: 0.5532 - acc: 0.8225 - val_loss: 0.3936 - val_acc: 0.8910
+    10000/10000 [==============================] - 21s 2ms/step - loss: 0.5659 - acc: 0.8280 - val_loss: 0.3751 - val_acc: 0.8970
     Epoch 7/10
-    10000/10000 [==============================] - 21s 2ms/step - loss: 0.5126 - acc: 0.8366 - val_loss: 0.3672 - val_acc: 0.8920
+    10000/10000 [==============================] - 21s 2ms/step - loss: 0.5123 - acc: 0.8454 - val_loss: 0.3458 - val_acc: 0.9010
     Epoch 8/10
-    10000/10000 [==============================] - 21s 2ms/step - loss: 0.4913 - acc: 0.8505 - val_loss: 0.3486 - val_acc: 0.8970
+    10000/10000 [==============================] - 21s 2ms/step - loss: 0.4843 - acc: 0.8517 - val_loss: 0.3303 - val_acc: 0.9010
     Epoch 9/10
-    10000/10000 [==============================] - 21s 2ms/step - loss: 0.4578 - acc: 0.8564 - val_loss: 0.3262 - val_acc: 0.9030
+    10000/10000 [==============================] - 21s 2ms/step - loss: 0.4587 - acc: 0.8552 - val_loss: 0.3123 - val_acc: 0.9100
     Epoch 10/10
-    10000/10000 [==============================] - 21s 2ms/step - loss: 0.4341 - acc: 0.8692 - val_loss: 0.3128 - val_acc: 0.9090
+    10000/10000 [==============================] - 21s 2ms/step - loss: 0.4418 - acc: 0.8665 - val_loss: 0.2954 - val_acc: 0.9160
 
 
 
@@ -169,8 +166,8 @@ print('Test accuracy:', score[1])
 model.summary()
 ```
 
-    Test loss: 0.31278526270389556
-    Test accuracy: 0.909
+    Test loss: 0.29542376232147216
+    Test accuracy: 0.916
     _________________________________________________________________
     Layer (type)                 Output Shape              Param #   
     =================================================================
@@ -214,90 +211,87 @@ model.summary()
 
 
 ```python
-X_test_vis = X_test_vis.reshape((X_test_vis.shape[0], n_rows, n_cols, 1))
-y_test_vis = y_test_vis.reshape((y_test_vis.shape[0]))
+X_test = X_test.reshape((X_test.shape[0], img_size,img_size, 1))
 
-indices = random.sample(range(X_test_vis.shape[0]),k=10)
-X_test_samples = X_test_vis[indices]
-y_test_samples = y_test_vis[indices]
-
-X_test_samples = X_test_samples.reshape(10,n_rows, n_cols, 1)
+indices = random.sample(range(X_test.shape[0]),k=10)
+X_test_samples = X_test[indices]
+y_test_samples = y_test[indices]
 ```
 
 
 ```python
 for i in range(10):
-  predict = model.predict_classes(X_test_samples[i].reshape(1,n_rows, n_cols, 1))
-  actual = y_test_samples[i]
+  predict = model.predict_classes(X_test_samples[i].reshape((1,img_size,img_size, 1)))
+  actual = np.argmax(y_test_samples[i])
   plt.imshow(X_test_samples[i].reshape(28,28),cmap="binary")
   print("Actual Class :{}, Predicted Class: {}".format(actual,predict[0]))
   plt.show()
 ```
 
-    Actual Class :7, Predicted Class: 7
+    Actual Class :3, Predicted Class: 3
 
 
 
 <img src="/images/output_12_1.png">
 
 
-    Actual Class :4, Predicted Class: 4
+    Actual Class :3, Predicted Class: 3
 
 
 
 <img src="/images/output_12_3.png">
 
 
-    Actual Class :7, Predicted Class: 7
+    Actual Class :0, Predicted Class: 0
 
 
 
 <img src="/images/output_12_5.png">
 
 
-    Actual Class :0, Predicted Class: 0
+    Actual Class :4, Predicted Class: 9
 
 
 
 <img src="/images/output_12_7.png">
 
 
-    Actual Class :0, Predicted Class: 0
+    Actual Class :9, Predicted Class: 9
 
 
 
 <img src="/images/output_12_9.png">
 
 
-    Actual Class :4, Predicted Class: 4
+    Actual Class :0, Predicted Class: 0
 
 
 
 <img src="/images/output_12_11.png">
 
 
-    Actual Class :8, Predicted Class: 9
+    Actual Class :3, Predicted Class: 3
 
 
 
 <img src="/images/output_12_13.png">
 
 
-    Actual Class :9, Predicted Class: 9
+    Actual Class :2, Predicted Class: 2
 
 
 
 <img src="/images/output_12_15.png">
 
 
-    Actual Class :4, Predicted Class: 4
+    Actual Class :1, Predicted Class: 1
 
 
 
 <img src="/images/output_12_17.png">
 
 
-    Actual Class :7, Predicted Class: 7
+    Actual Class :2, Predicted Class: 2
 
 
 
