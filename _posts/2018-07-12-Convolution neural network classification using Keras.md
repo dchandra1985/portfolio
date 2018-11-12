@@ -2,7 +2,6 @@
 layout: post
 title: "Image classification using convolution neural network with Keras"
 categories:
-  - Machine Learning
   - Deep Learning
 tags:
   - python
