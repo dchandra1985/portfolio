@@ -45,3 +45,8 @@ with tf.Session(graph=graph) as sess:
 result:
 
     550
+
+### References :
+<ol>
+  <li> https://www.tensorflow.org/tutorials/ </li>
+</ol>
