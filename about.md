@@ -29,4 +29,6 @@ google_analytics: UA-126196456-1
     <!-- <p>For further details and contents, please visit the repository on <a href="https://github.com/dchandra1985/Data_Science">Github</a></p> -->
 
     <p>Contact me @ <a href="https://www.linkedin.com/in/dinesh-chandrasekaran-49731b15/">linkedin</a></p>
+    
+    <p>Contact me @ <a href=chandrasekarandinesh1985@gmail.com">email</a></p>
 </div>
