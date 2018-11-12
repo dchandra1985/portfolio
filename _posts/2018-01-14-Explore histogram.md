@@ -202,4 +202,8 @@ A distribution is positively skewed if the scores fall toward the lower side of 
 Positively skewed data is also referred to as skewed to the right because that is the direction of the 'long tail end' of the chart.
 
 ### References :
-    https://www.eia.gov/
+  
+<ol>
+  <li> https://www.eia.gov/ </li>
+  <li> https://stackoverflow.com/ </li>
+</ol>
