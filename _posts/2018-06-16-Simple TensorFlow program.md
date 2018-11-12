@@ -2,7 +2,6 @@
 layout: post
 title: "TensorFlow basic program"
 categories:
-  - Machine Learning
   - Deep Learning
 tags:
   - TensorFlow
