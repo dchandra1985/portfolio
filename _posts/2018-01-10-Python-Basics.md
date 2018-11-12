@@ -268,7 +268,10 @@ plt.show()
 
 <img src="/images/ML_2_5.png">
 
-
-
+   
 ### References :
-   https://www.eia.gov/
+  
+<ol>
+  <li> https://www.eia.gov/ </li>
+  <li> https://stackoverflow.com/ </li>
+</ol>
