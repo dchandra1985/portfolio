@@ -281,4 +281,8 @@ plt.show()
 
 
 ### References :
-           https://www.eia.gov/
+  
+<ol>
+  <li> https://www.eia.gov/ </li>
+  <li> https://stackoverflow.com/ </li>
+</ol>
