@@ -2,7 +2,6 @@
 layout: post
 title: "Image classification using convolution neural network with TensorFlow"
 categories:
-  - Machine Learning
   - Deep Learning
 tags:
   - python
@@ -370,3 +369,10 @@ with tf.Session() as sess:
 
 
 <img src="/images/output_15_19.png">
+
+### References :
+   1) https://pythonprogramming.net/
+   2) https://stackoverflow.com/
+   3) https://sirajraval.com/
+   4) http://yann.lecun.com/exdb/mnist/ - MNIST Dataset
+   5) https://www.tensorflow.org/tutorials/
