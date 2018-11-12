@@ -377,5 +377,6 @@ with tf.Session() as sess:
   <li> https://sirajraval.com/ </li>
   <li> http://yann.lecun.com/exdb/mnist/ - MNIST Dataset </li>
   <li> https://www.tensorflow.org/tutorials/ </li>
+  <li> https://machinelearningmastery.com/ </li>
 </ol>
 
