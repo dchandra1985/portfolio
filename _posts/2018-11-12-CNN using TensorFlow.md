@@ -371,8 +371,11 @@ with tf.Session() as sess:
 <img src="/images/output_15_19.png">
 
 ### References :
-   1) https://pythonprogramming.net/
-   2) https://stackoverflow.com/
-   3) https://sirajraval.com/
-   4) http://yann.lecun.com/exdb/mnist/ - MNIST Dataset
-   5) https://www.tensorflow.org/tutorials/
+<ol>
+  <li> https://pythonprogramming.net/ </li>
+  <li> https://stackoverflow.com/ </li>
+  <li> https://sirajraval.com/ </li>
+  <li> http://yann.lecun.com/exdb/mnist/ - MNIST Dataset </li>
+  <li> https://www.tensorflow.org/tutorials/ </li>
+</ol>
+
