@@ -188,3 +188,12 @@ if __name__ == "__main__":
 
        Mean squared error  Mean absolute error  Coefficient of determination
     0          650.124425            20.204875                      0.940492
+    
+
+### References :
+<ol>
+  <li> https://pythonprogramming.net/ </li>
+  <li> https://stackoverflow.com/ </li>
+  <li> https://sirajraval.com/ </li>
+  <li> https://machinelearningmastery.com/ </li>
+</ol>
