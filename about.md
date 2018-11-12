@@ -30,5 +30,5 @@ google_analytics: UA-126196456-1
 
     <p>Contact me @ <a href="https://www.linkedin.com/in/dinesh-chandrasekaran-49731b15/">linkedin</a></p>
     
-    <p>Contact me @ <a href=chandrasekarandinesh1985@gmail.com">email</a></p>
+    <p>Contact me @ <a href=mailto:chandrasekarandinesh1985@gmail.com">email</a></p>
 </div>
