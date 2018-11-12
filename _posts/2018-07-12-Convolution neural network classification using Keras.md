@@ -297,3 +297,13 @@ for i in range(10):
 
 
 <img src="/images/output_12_19.png">
+
+### References :
+<ol>
+  <li> https://pythonprogramming.net/ </li>
+  <li> https://stackoverflow.com/ </li>
+  <li> https://sirajraval.com/ </li>
+  <li> http://yann.lecun.com/exdb/mnist/ - MNIST Dataset </li>
+  <li> https://keras.io/ </li>
+  <li> https://machinelearningmastery.com/ </li>
+</ol>
