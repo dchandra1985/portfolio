@@ -2,7 +2,6 @@
 layout: post
 title: "Image classification using simple neural network with keras"
 categories:
-  - Machine Learning
   - Deep Learning
 tags:
   - python
