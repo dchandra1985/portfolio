@@ -2,6 +2,7 @@
 layout: post
 title: "Image classification using convolution neural network with TensorFlow"
 categories:
+  - Machine Learning 
   - Deep Learning
 tags:
   - python
