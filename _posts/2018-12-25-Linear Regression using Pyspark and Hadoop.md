@@ -20,7 +20,7 @@ This topic explains the application of Machine Learning using Apache Hadoop and 
 
 <!-- more -->
 
-What is Apache Spark? Why do we need to use for Big Data Application?
+<br>What is Apache Spark? Why do we need to use for Big Data Application?</br>
 
 Apache Spark is a unified analytics engine for big data processing, with built-in modules for streaming, SQL, machine learning and graph processing.
 
@@ -74,7 +74,7 @@ step 5:
 
    <img src="/images/output_16_7.png">
 
-Below program using the above data from hadoop file system and perform machine learning algorithm using Apache Spark MLlib
+Below program uses the above data from hadoop file system and perform machine learning algorithm using Apache Spark MLlib
 
 ```python
 from pyspark.sql import SparkSession
