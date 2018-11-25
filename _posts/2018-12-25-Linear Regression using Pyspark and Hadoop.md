@@ -66,7 +66,7 @@ Here is an example for starting the hadoop in a standalone node and data process
 
    <img src="/images/output_16_6.png">
 
-<b>step 5:</b>
+<b>Step 5:</b>
 
     Copy a data file from local to HDFS using below command
 
