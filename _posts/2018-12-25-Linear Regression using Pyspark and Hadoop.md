@@ -34,39 +34,39 @@ The main advantages of using spark for Big Data Applications are
 
 <img src="/images/Apache_Spark.png">
 
-How it runs faster than MapReduce?
+<b>How it runs faster than MapReduce?</b>
 
 The Hadoop MapReduce use to read from and write to a disk while Apache Spark speeds up data processing via in-memory computation(RAM)
 
 Here is an example for starting the hadoop in a standalone node and data processing using HDFS
 
-Step 1:
+<b>Step 1:</b>
 
     Using the command start-all.sh starts the hadoop daemons all at once
 
    <img src="/images/output_16_1.png">
    <img src="/images/output_16_2.png">
 
-Step 2:
+<b>Step 2:</b>
 
     Check the status using command jps in the terminal
 
    <img src="/images/output_16_3.png">
 
-Step 3:
+<b>Step 3:</b>
 
     Check the hadoop cluster information and hadoop file system using the browser
 
    <img src="/images/output_16_4.png">
    <img src="/images/output_16_5.png">
 
-Step 4:
+<b>Step 4:</b>
 
     Create a folder in the hadoop root using command hadoop fs -mkdir /folder_name
 
    <img src="/images/output_16_6.png">
 
-step 5:
+<b>step 5:</b>
 
     Copy a data file from local to HDFS using below command
 
