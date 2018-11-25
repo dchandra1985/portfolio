@@ -44,27 +44,27 @@ Step 1:
 
     Using the command start-all.sh starts the hadoop daemons all at once
 
-    <img src="/images/output_16_1.png">
-    <img src="/images/output_16_2.png">
+   <img src="/images/output_16_1.png">
+   <img src="/images/output_16_2.png">
 
 Step 2:
 
     Check the status using command jps in the terminal
 
-    <img src="/images/output_16_3.png">
+   <img src="/images/output_16_3.png">
 
 Step 3:
 
     Check the hadoop cluster information and hadoop file system using the browser
 
-    <img src="/images/output_16_4.png">
-    <img src="/images/output_16_5.png">
+   <img src="/images/output_16_4.png">
+   <img src="/images/output_16_5.png">
 
 Step 4:
 
     Create a folder in the hadoop root using command hadoop fs -mkdir /folder_name
 
-    <img src="/images/output_16_6.png">
+   <img src="/images/output_16_6.png">
 
 step 5:
 
@@ -72,7 +72,7 @@ step 5:
 
     hadoop fs -copyFromLocal {Local Path} {Destination Path}
 
-    <img src="/images/output_16_7.png">
+   <img src="/images/output_16_7.png">
 
 Below program using the above data from hadoop file system and perform machine learning algorithm using Apache Spark MLlib
 
