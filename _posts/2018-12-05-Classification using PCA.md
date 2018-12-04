@@ -41,9 +41,9 @@ Variance is a measure of heterogeneity in a dataset. Higher the variance, the da
 
 <b>What is the relationship between eigen values and eigen vectors with principal component?</b>
 
-For the covariance or correlation matrix, the Eigen vectors correspond to principal components and the Eigen values to the variance explained by the principal components. It is equivalent to fit the straight line with high variance.
+For the covariance or correlation matrix, the eigen vectors correspond to principal components and the eigen values to the variance explained by the principal components. It is equivalent to fit the straight line with high variance.
 
-So by using the features in a dataset, we can transform the dataset to covariance matrix. By performing Eigen value decomposition or Proper orthogonal decomposition, the Eigen values and Eigen vectors are decomposed. The Eigen vectors are ordered using the magnitude of Eigen value which represents the Principal components with ordered variance.
+So by using the features in a dataset, we can transform the dataset to covariance matrix. By performing Eigen value decomposition or Proper orthogonal decomposition, the eigen values and eigen vectors are decomposed. The eigen vectors are ordered using the magnitude of eigen value which represents the principal components with ordered variance.
 
 
 <b>Basic mathematical steps to find out principal component</b>
