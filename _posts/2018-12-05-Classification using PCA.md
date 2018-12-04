@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Classification using Logistic Regression algorithm with Principal Component Analysis"
+title: "Classification using Logistic Regression Algorithm with Principal Component Analysis"
 categories:
   - Machine Learning
 tags:
@@ -19,15 +19,15 @@ last_modified_at: 2018-12-05
 excerpt_separator: <!-- more -->
 ---
 
-This topic explains the classification using Logistic Regression algorithm with Principal Component Analysis
+This topic explains the classification using Logistic Regression Algorithm with Principal Component Analysis
 
 <!-- more -->
 
 <b>What is Principal Component Analysis?</b>
 
-It is one of the unsupervised technique used for feature engineering to reduce the data size or the dimensions by transforming the given features to Eigen values and Eigen vectors (principal components).
+It is one of the unsupervised machine learning technique used for feature engineering to reduce the data size or the dimensions by transforming the given features to eigen values and eigen vectors (Principal Components).
 
-As per Wikepedia, Principal component analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components.
+As per Wikepedia, "Principal component analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components."
 
 <b>What is principal component?</b>
 
@@ -39,22 +39,23 @@ The data analysis is mainly carried out on the features which have more informat
 
 Variance is a measure of heterogeneity in a dataset. Higher the variance, the data is heterogeneous and smaller the variance, the data is homogeneous.
 
-<b>What is the relationship between Eigen values and vectors with Principal Component?</b>
+<b>What is the relationship between eigen values and eigen vectors with principal component?</b>
 
-For the covariance or correlation matrix, the eigenvectors correspond to principal components and the eigenvalues to the variance explained by the principal components. It is equivalent to fit the straight line with high variance.
+For the covariance or correlation matrix, the Eigen vectors correspond to principal components and the Eigen values to the variance explained by the principal components. It is equivalent to fit the straight line with high variance.
 
-So using the features in a dataset, we can transform the dataset to covariance matrix. By using Eigen value decomposition or Proper orthogonal decomposition, the Eigen values and vectors are decomposed. The Eigen vectors are ordered using the magnitude of Eigen value which represents the Principal components with ordered variance.
+So by using the features in a dataset, we can transform the dataset to covariance matrix. By performing Eigen value decomposition or Proper orthogonal decomposition, the Eigen values and Eigen vectors are decomposed. The Eigen vectors are ordered using the magnitude of Eigen value which represents the Principal components with ordered variance.
 
 
-<b<Basic mathematical steps to find out Principal Component</b>
+<b>Basic mathematical steps to find out principal component</b>
+
 <ol>
   <li> Standardize the features by transform the data to center it by removing the mean value of each feature, then scale it by dividing non-constant features by their standard deviation.</li>
   <li> Find covariance matrix </li>
-  <li> Perform proper orthogonal decomposition to find out Eigen values and Eigen vectors </li>
-  <li> Prioritize the Eigen vectors using the magnitude of Eigen values from high to low which represents Principal Components ordered with respect to its variance</li>
+  <li> Perform proper orthogonal decomposition to find out eigen values and eigen vectors </li>
+  <li> Prioritize the eigen vectors using the magnitude of eigen values from high to low which represents principal components ordered with respect to its variance</li>
 </ol>
 
-Here is a simple example to find out the Principal Component using the mathematical steps described above.
+Here is a simple example to find out the principal component using the mathematical steps described above.
 
 ```python
 import numpy as np
@@ -113,7 +114,7 @@ Transforming the dataset to a covariance matrix
 cov_mat = np.cov(X_std.T)
 ```
 
-Performing linear transformation to decompose the covariance matrix to Eigen values and Eigen vectors
+Performing linear transformation to decompose the covariance matrix to eigen values and eigen vectors
 
 ```python
 eigen_values,eigen_vectors = np.linalg.eig(cov_mat)
@@ -125,7 +126,7 @@ print(eigen_values)
 
     [2.1974262  0.22910738 0.61746263 1.18424081 1.22630843]
 
-Eigen vectors are ordered using Eigen values to find out the Principal Components
+Eigen vectors are ordered using eigen values to find out the principal components
 
 ```python
 # Eigenvalue, Eigenvector sorted and reversed from high to low
@@ -328,7 +329,8 @@ Feature Standardization
 X_transform = preprocessing.StandardScaler().fit_transform(X)
 ```
 
-# Filtering the Principal Components which represents about 95 % of variance
+Filtering the principal components which represents about 95 % of variance
+
 ```python
 # Data with 95% of variance
 PCA = decomposition.PCA(0.95)
@@ -339,7 +341,7 @@ PCA = decomposition.PCA(0.95)
 principal_components = PCA.fit_transform(X_transform)
 ```
 
-Thr first 3 principle components reqpresents around 95% of data variance
+Thr first 3 principal components reqpresents around 95% of data variance
 
 
 ```python
@@ -521,7 +523,7 @@ print(report)
     avg / total       0.92      0.92      0.92       210
 
 
-<b>Model Building using Principal components</b>
+<b>Model Building using Principal Components</b>
 
 Only considering first 2 principal components which represents around 89% of the given data variance
 
@@ -563,7 +565,7 @@ print(report)
 
     avg / total       0.92      0.92      0.92       210
 
-By comparing the model built using all the features and first two principal components, the accuracy of the model for classification is almost same aroun 92%.
+By comparing the model built using all the features and first two principal components, the accuracy of the model for classification is almost same around 92%.
 
 ```python
 # Decision Boundary using Principal Components
