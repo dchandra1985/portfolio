@@ -588,8 +588,8 @@ plt.show()
 
 ### References :
 <ol>
-  <li> https://scikit-learn.org/ </li>
+  <li> https://scikit-learn.org/</li>
   <li> https://stackoverflow.com/ </li>
-  <li> https://en.wikipedia.org/wiki/Principal_component_analysis </li>
-  <li> https://archive.ics.uci.edu/ml/datasets/seeds </li>
+  <li> https://en.wikipedia.org/ </li>
+  <li> https://archive.ics.uci.edu/</li>
 </ol>
