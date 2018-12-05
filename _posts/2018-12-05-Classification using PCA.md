@@ -185,7 +185,8 @@ Here is a example for Classification using Logistic regression with Principal Co
 ```python
 data = pd.read_table("seeds_dataset.txt", sep = r'\s+', names = 'area,perimeter,compactness,length,width,assymetry,groove_length,variety'.split(","))
 ```
-The above data and its information below are taken from UCI Machine Learning Repository (https://archive.ics.uci.edu/ml/datasets/seeds)
+The above data and its information below are taken from UCI Machine Learning Repository
+<font size="-1">(https://archive.ics.uci.edu/ml/datasets/seeds)</font>
 
 <b>Data Set Information:</b>
 
@@ -398,23 +399,10 @@ df = pd.concat([principal_dataframe,target_dataframe], axis = 1)
 df.head(5)
 ```
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<div style="overflow-x:auto;">
+<table>
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>Principal Component 1</th>
       <th>Principal Component 2</th>
