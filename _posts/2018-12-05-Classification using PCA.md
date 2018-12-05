@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Classification using Logistic Regression Algorithm with Principal Component Analysis"
+title: "Data Classification using Logistic Regression Algorithm with Principal Component Analysis"
 categories:
   - Machine Learning
 tags:
@@ -19,7 +19,7 @@ last_modified_at: 2018-12-05
 excerpt_separator: <!-- more -->
 ---
 
-This topic explains the classification using Logistic Regression Algorithm with Principal Component Analysis
+This topic explains the data classification using Logistic Regression Algorithm with Principal Component Analysis
 
 <!-- more -->
 
@@ -212,23 +212,10 @@ All of these parameters were real-valued continuous.
 data.head(5)
 ```
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<div style="overflow-x:auto;">
+<table>
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>area</th>
       <th>perimeter</th>
