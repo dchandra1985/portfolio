@@ -129,19 +129,21 @@ if __name__ == "__main__":
     sklearn_model(data)
 ```
 
-</b>Randomly generated scatter data<b>
+<b>Randomly generated scatter data</b>
 
 <img src="/images/output_18_0.png">
 
-</b>Choice of K using elbow method<b>
+<b>Choice of K using elbow method</b>
 
 <img src="/images/output_18_1.png">
 
 Using the above plot, the correct choice of the given data is 4.
 
-</b>Clustering using K-means Clustering Algorithm<b>
+<b>Clustering using K-means Clustering Algorithm</b>
 
 <img src="/images/output_18_2.png">
+
+The above plot shows the given data are clustered as 4 seperate groups with different colors and a centroid.
 
 ### References :
 <ol>
