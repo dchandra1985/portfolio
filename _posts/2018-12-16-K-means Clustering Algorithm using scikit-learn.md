@@ -78,6 +78,7 @@ def plot(X1,X2):
     plt.show()
 ```
 
+Elbow Method
 
 ```python
 def elbow_method(data):
