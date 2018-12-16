@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Optimal number of cluster identification using K-Means algorithm with elbow method"
+title: "Optimal number of cluster identification with K-Means algorithm using elbow method"
 categories:
   - Machine Learning
 tags:
