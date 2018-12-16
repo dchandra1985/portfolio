@@ -13,6 +13,7 @@ tags:
   - Eigen values
   - Eigen vectors
   - Linear transformation
+  - unsupervised learning
 
 
 last_modified_at: 2018-12-05
