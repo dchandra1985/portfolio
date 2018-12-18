@@ -39,7 +39,7 @@ Like the derivative, the gradient represents the slope of the tangent of the gra
 
 <b>What is the relationship between cost function and gradient descent?</b>
 
-Any cost function can be minimized or maximized to optimize the algorithm using gradients.
+Any cost function can be minimized or maximized using gradients.
 The gradient vector helps to find out the direction to optimize and its magnitude represents the slope of the function in that direction.
 
 Below is an example to optimize the linear regression cost function using gradient descent algorithm
