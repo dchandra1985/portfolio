@@ -18,7 +18,7 @@ This topic explains the cost function optimization using Gradient Descent Algori
 
 <!-- more -->
 
-What is Cost Function?
+<b>What is Cost Function?</b>
 
    First of all, Cost Function can be also called as Loss Function. It represents the error of the trained model performance.
 
@@ -29,7 +29,7 @@ The objective of a cost function can be different for different machine learning
 - maximize information gain/ minimize Gini index (Decision tree classification)
 - minimize cross entropy (Logistic Regression)
 
-What is Gradient and how it differs from derivative?
+<b>What is Gradient and how it differs from derivative?</b>
 
 As per Wikepedia, "The gradient is a multi-variable generalization of the derivative.
 While a derivative can be defined on functions of a single variable, for functions of several variables, the gradient takes its place.
@@ -37,11 +37,12 @@ The gradient is a vector-valued function, as opposed to a derivative, which is s
 Like the derivative, the gradient represents the slope of the tangent of the graph of the function."
 
 
-What is the relationship between cost function and gradient descent?
+<b>What is the relationship between cost function and gradient descent?</b>
 
 Any cost function can be minimized or maximized to optimize the algorithm using gradients.
 The gradient vector helps to find out the direction to optimize and its magnitude represents the slope of the function in that direction.
 
+Below is an example to optimize the linear regression cost function using gradient descent algorithm
 
 ```python
 # Import libraries for basic python operation
@@ -109,9 +110,7 @@ def gradient_descent(X,y):
     return [m_updated,b_updated,mse]
 ```
 
-Cost Function:
-
-The objective of the cost function is to minimize the mean squared Error.
+The objective of the cost function is to minimize the mean squared error.
 
 ```python
 def plot_cost_function(mse):
