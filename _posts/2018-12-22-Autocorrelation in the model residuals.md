@@ -46,7 +46,7 @@ This can be identified by analyzing the error terms where some pattern exists.
 
 This can also be identified and quantified using the below example code where a randomly generated data is used for linear regression.
 
-<b>Steps for check the autocorrelation:</b>
+<b>Steps to check the autocorrelation:</b>
 
     1) Compute the error term using the prediction and actual data
 
