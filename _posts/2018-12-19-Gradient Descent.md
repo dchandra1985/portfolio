@@ -3,6 +3,7 @@ layout: post
 title: "Cost Function Optimization using Gradient Descent Algorithm"
 categories:
   - Machine Learning
+  - Statistics
 tags:
   - python
   - Linear Regression
@@ -20,13 +21,13 @@ This topic explains the cost function optimization using Gradient Descent Algori
 
 <b>What is Cost Function?</b>
 
-   First of all, Cost Function can be also called as Loss Function. It represents the error of the trained model performance.
+   First of all, Cost Function can be also called as Loss Function. It typically represents the error of the trained model performance.
 
 The objective of a cost function can be different for different machine learning algorithms.
 
 - minimize mean squared error (Linear Regression)
 - maximize the reward function (reinforcement learning)
-- maximize information gain/ minimize Gini index (Decision tree classification)
+- minimize Gini index/maximize information gain (Decision tree classification)
 - minimize cross entropy (Logistic Regression)
 
 <b>What is Gradient and how it differs from derivative?</b>
