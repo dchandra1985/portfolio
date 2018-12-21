@@ -56,7 +56,9 @@ This can also be identified and quantified using the below example code where a 
 
    4) Autocorrelation exist if sum of sign change is less than or equal to cutoff value
 
-   <img align="middle" src="/images/cutoff.png">
+   <div class="middle">
+     <img src="/images/cutoff.png">
+   </div>
 
                    where n = number of observations
 
