@@ -58,9 +58,7 @@ This can also be identified and quantified using the below example code where a 
 
 
    <center><img src="/images/cutoff.png"></center>
-
-              
-              where n = number of observations
+                     where n = number of observations
 
 
 ```python
