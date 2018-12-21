@@ -48,17 +48,17 @@ This can also be identified and quantified using the below example code where a 
 
 <b>Steps to check the autocorrelation:</b>
 
-    1) Compute the error term using the prediction and actual data
+   1) Compute the error term using the prediction and actual data
 
-    2) Compute the sign change of the error (0 or 1)
+   2) Compute the sign change of the error (0 or 1)
 
-    3) Compare the sum of sign change and cutoff value
+   3) Compare the sum of sign change and cutoff value
 
-    4) Autocorrelation exist if sum of sign change is less than or equal to cutoff value
+   4) Autocorrelation exist if sum of sign change is less than or equal to cutoff value
 
-    <img src="/images/cutoff.png">
+   <img src="/images/cutoff.png">
 
-                    where n = number of observations
+                   where n = number of observations
 
 
 ```python
