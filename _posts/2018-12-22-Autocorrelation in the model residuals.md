@@ -251,8 +251,10 @@ As per the above example, autocorrelation doesnot exist within residual error as
 
 ### References :
 
-<ol>
-  <li> <font size="-1"> https://www.statisticssolutions.com/autocorrelation/ </font> </li>
-  <li> https://en.wikipedia.org/wiki/Autocorrelation </li>
-  <li> https://newonlinecourses.science.psu.edu/stat501/node/357/ </li>
-</ol>
+<div style="overflow-x:auto;">
+  <ol>
+    <li> https://www.statisticssolutions.com/autocorrelation/ </li>
+    <li> https://en.wikipedia.org/wiki/Autocorrelation </li>
+    <li> https://newonlinecourses.science.psu.edu/stat501/node/357/ </li>
+  </ol>
+</div>
