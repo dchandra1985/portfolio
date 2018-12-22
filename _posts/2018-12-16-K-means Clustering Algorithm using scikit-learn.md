@@ -147,10 +147,12 @@ Using the above plot, the choice of K for the given data can be 2 or 4. The data
 The above plot shows the given data are clustered as 4 seperate groups with different colors and a centroid.
 
 ### References :
-<ol>
-  <li> https://scikit-learn.org/ </li>
-  <li> https://stackoverflow.com/ </li>
-  <li> https://en.wikipedia.org/wiki/K-means_clustering </li>
-  <li> https://en.wikipedia.org/wiki/Cluster_analysis </li>
-  <li> https://en.wikipedia.org/wiki/Determining_the_number_of_clusters_in_a_data_set </li>
-</ol>
+<div style="overflow-x:auto;">
+  <ol>
+    <li> https://scikit-learn.org/ </li>
+    <li> https://stackoverflow.com/ </li>
+    <li> https://en.wikipedia.org/wiki/K-means_clustering </li>
+    <li> https://en.wikipedia.org/wiki/Cluster_analysis </li>
+    <li> https://en.wikipedia.org/wiki/Determining_the_number_of_clusters_in_a_data_set </li>
+  </ol>
+</div>
