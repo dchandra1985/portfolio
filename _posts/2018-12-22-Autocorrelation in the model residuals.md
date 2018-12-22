@@ -38,7 +38,7 @@ In other words, Autocorrelation exists when residuals are not independent from e
 
 <b>Why there is an assumption to have no autocorrelation for linear regression?</b>
 
-When there is an autocorrelation within the residual error, the trained model was not able to extract all the variances or information. This reduces the model accuracy.
+If the trained model is not able to extract all the variances or information from the features or variables, then autocorrelation exists in the model residual error terms. This inturn reduces the model accuracy.
 
 <b>How autocorrelation in linear regression can be identified?</b>
 
