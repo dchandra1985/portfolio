@@ -138,7 +138,7 @@ if __name__ == "__main__":
 
 <img src="/images/output_18_1.png">
 
-Using the above plot, the choice of K for the given data can be 2 or 4. The data clustered using 4 seperate groups gives more meaning than grouping into 2 groups. So the correct choice for the given data is 4.
+Using the above plot, the choice of K for the given data can be 2 or 4. The data clustered using 4 seperate groups gives more meaning than grouping into 2 groups visually. So the correct choice for the given data is 4 as per the error convergence in the above plot.
 
 <b>Clustering using K-means Clustering Algorithm</b>
 
