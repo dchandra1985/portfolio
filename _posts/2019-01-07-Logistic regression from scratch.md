@@ -79,6 +79,9 @@ Decision boundary is calculated as follows:
 
 <img src="/images/decision_boundary_eq.png">
 
+
+Below is an example python code for binary classification using Logistic Regression
+
 ```python
 import numpy as np
 import pandas as pd
