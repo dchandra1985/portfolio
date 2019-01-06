@@ -30,23 +30,23 @@ As the logistic or sigmoid function used to predict the probabilities between 0 
 
 As per Wikepedia, "A sigmoid function is a mathematical function having a characteristic "S"-shaped curve or sigmoid curve." The output of sigmoid function results from 0 to 1 in a continous scale.
 
-    <img src="/images/sigmoid.png">
+   <img src="/images/sigmoid.png">
 
-    <img src="/images/sigmoid_Formula.png">
+   <img src="/images/sigmoid_Formula.png">
 
 <b>Why we need to use cross entropy cost function rather than mean squared error for logistic regression?</b>
 
 Cross-entropy cost function measures the performance of a classification model whose output is a probability value between 0 and 1. It is also called log loss.
 
-    <img src="/images/cross_entropy.png">
+   <img src="/images/cross_entropy.png">
 
 In linear regression, we need to minimize the mean squared error using any optimization algorithm because the cost function is a convex function. It has only one local or global minima.
 
-    <img src="/images/convex.png">
+   <img src="/images/convex.png">
 
 In logistic regression, if we use mean square error cost function with logistic function, it provides non-convex outcome which results in many local minima.
 
-    <img src="/images/Non_convex.png">
+   <img src="/images/Non_convex.png">
 
 cross entropy cost function with logistic function gives convex curve with one local/global minima.
 
@@ -274,8 +274,11 @@ if __name__ == "__main__":
 <img src="/images/output_21_3.png">
 
 ### References :
-<ol>
-  <li> https://en.wikipedia.org/wiki/Logistic_regression </li>
-  <li> https://en.wikipedia.org/wiki/Sigmoid_function </li>
-  <li> https://en.wikipedia.org/wiki/Logistic_function </li>
-</ol>
+
+<div style="overflow-x:auto;">
+  <ol>
+    <li> https://en.wikipedia.org/wiki/Logistic_regression </li>
+    <li> https://en.wikipedia.org/wiki/Sigmoid_function </li>
+    <li> https://en.wikipedia.org/wiki/Logistic_function </li>
+  </ol>
+</div>
