@@ -5,7 +5,7 @@ categories:
   - Statistics
   - Machine Learning
 tags:
-  - Data types
+  - Types of Data
 
 last_modified_at: 2018-01-10
 excerpt_separator: <!-- more -->
