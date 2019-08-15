@@ -1,17 +1,19 @@
 ---
 layout: post
-title: "Python Basics"
+title: "Python for Data Science"
 categories:
   - Machine Learning
 tags:
   - python
-  - visualization
+  - Data Visualization
+  - Data Ingestion
+  - Data Exploration
 
 last_modified_at: 2018-09-20
 excerpt_separator: <!-- more -->
 ---
 
-This topic explains the basics of python like data ingestion, exploration, and visualization using basic plots.
+This topic explains the basics of python for data ingestion, exploration, and visualization using basic plots.
 <!-- more -->
 
 ## Data ingestion
