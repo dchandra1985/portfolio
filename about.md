@@ -18,7 +18,7 @@ google_analytics: UA-126196456-1
 
     <p>I am Dinesh Chandrasekaran, ASQ-CSSBB, PMP, PMI-ACP, Azure Data Scientist. I have completed Master Sciences ET Technologies offered jointly by Ecole Centrale de Lille, Ecole Nationale Supérieure de Mécanique et d’Aérotechnique de Poitiers and Ecole Nationale Supérieure d’Ingénieurs de Poitiers, France. The Master Program majorly focussed on Turbulence, Mathematical Modeling, Analytical and Computational Techniques. Recently completed PG Level advanced certification programme on Machine Learning and AI for autonomous systems at Indian Institute of Science (IISc, Bangalore) </p>
 
-    <p>I have around twelve years of industry and research experience in Big Data, Data Science and Project Management. Experience in building real time data pipelines, managing Big Data Platform, and coaching teams to adopt Six Sigma and Agile Methodology including Scrum and Kanban. Experience in developing Machine Learning algorithms and applying Statistical Techniques to improve the process and product performance.</p>
+    <p>I have a total of 15 years of industry experience, including approximately 6 years specializing in Big Data, Data Engineering, and Artificial Intelligence . Experienced in setting up enterprise‑scale data lakes, designing robust data models, and preparing high‑quality data pipelines to support Artificial Intelligence initiatives. Experienced in designing and implementing multi‑agent AI systems for real‑time data platforms, enabling autonomous data processing, monitoring, and decision‑making.</p>
 
     <p>My favorite things in life includes South Indian food cuisine, exploring Chennai city and supporting Chennai Super Kings cricket team.</p>
 
