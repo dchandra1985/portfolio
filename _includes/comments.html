@@ -1,20 +1,6 @@
 {% if page.comments != false %}
-<section class="comments">
-  <h2>Comments</h2>
-
-  <div id="disqus_thread"></div>
-  <script>
-    var disqus_config = function () {
-      this.page.url = "{{ page.url | absolute_url }}";
-      this.page.identifier = "{{ page.guid or page.id }}" || "{{ page.url | absolute_url }}";
-    };
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://dinesh-chandra.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view comments.</noscript>
-</section>
+  <section class="comments">
+    <h2>Comments</h2>
+    {% include disqus.html %}
+  </section>
 {% endif %}
