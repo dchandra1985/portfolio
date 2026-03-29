@@ -1,5 +1,7 @@
 # Dependencies
 markdown:         kramdown
+kramdown:
+  input: GFM
 highlighter:      rouge
 
 # Setup
@@ -28,6 +30,8 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
   
   
 
@@ -41,8 +45,20 @@ sidebar_home_link:  true
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
 
+giscus:
+  repo: "your-github-username/your-repo"
+  repo_id: "your-repo-id"
+  category: "General"
+  category_id: "your-category-id"
+  mapping: "pathname"
+  reactions_enabled: true
+  emit_metadata: false
+  input_position: "bottom"
+  theme: "light"
+
+# Optional: disable Disqus if still present
 disqus:
-  shortname:      dinesh-chandra
+  shortname:
 
 google_analytics: UA-126196456-1
 

@@ -1,6 +1,25 @@
 {% if page.comments != false %}
-  <section class="comments">
-    <h2>Comments</h2>
-    {% include disqus.html %}
-  </section>
+<section class="comments">
+  <h2>Comments</h2>
+
+  <div class="giscus"
+    data-repo="dchandra1985/portfolio"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkxNDk2NzExNzk="
+    data-category="General"
+    data-category-id="DIC_kwDOCOvNC84C5jbT"
+    data-mapping="pathname"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="en"
+    data-loading="lazy">
+  </div>
+
+  <script src="https://giscus.app/client.js"
+    async defer crossorigin="anonymous">
+  </script>
+
+  <noscript>Please enable JavaScript to view comments.</noscript>
+</section>
 {% endif %}
