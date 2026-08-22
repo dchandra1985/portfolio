@@ -15,11 +15,10 @@ excerpt_separator: <!-- more -->
 
 Imagine every piece of text (a sentence, a document) gets turned into a vector — think of it as an arrow pointing in some direction in space, with a certain length.
 
-There are two common ways to measure "how similar" two vectors are:
-<ol>
-  <li> Inner product (dot product) — cares about both the direction the arrows point AND their length
-  <li> Cosine similarity — cares only about the direction the arrows point, ignoring length entirely
-</ol>
+There are two common ways to measure "how similar" two vectors are:\
+1) Inner product (dot product) — cares about both the direction the arrows point AND their length\
+2) Cosine similarity — cares only about the direction the arrows point, ignoring length entirely\
+
 
 <b> Why length can be a problem? </b>
 
