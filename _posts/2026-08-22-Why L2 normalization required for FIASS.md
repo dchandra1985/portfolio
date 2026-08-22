@@ -16,9 +16,10 @@ excerpt_separator: <!-- more -->
 Imagine every piece of text (a sentence, a document) gets turned into a vector — think of it as an arrow pointing in some direction in space, with a certain length.
 
 There are two common ways to measure "how similar" two vectors are:\
-1) Inner product (dot product) — cares about both the direction the arrows point AND their length\
-2) Cosine similarity — cares only about the direction the arrows point, ignoring length entirely
-
+<ol>
+  <li> Inner product (dot product) — cares about both the direction the arrows point AND their length </li>
+  <li> Cosine similarity — cares only about the direction the arrows point, ignoring length entirely </li>
+</ol>
 
 <b> Why length can be a problem? </b>
 
@@ -58,7 +59,7 @@ FAISS (the vector search library) has an index type called IndexFlatIP that's op
 
 ## To Summarize:
 <ol>
-  <li> L2-normalize all your vectors before adding them to the index (make every vector length 1)
-  <li> Use FAISS's fast IndexFlatIP (inner product) search as normal
-  <li> Because everything's normalized, the inner product it computes is mathematically identical to cosine similarity — you get cosine similarity search "for free," using the faster inner-product code path
+  <li> L2-normalize all your vectors before adding them to the index (make every vector length 1) </li>
+  <li> Use FAISS's fast IndexFlatIP (inner product) search as normal </li>
+  <li> Because everything's normalized, the inner product it computes is mathematically identical to cosine similarity — you get cosine similarity search "for free," using the faster inner-product code path </li>
 </ol>
