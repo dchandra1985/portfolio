@@ -9,7 +9,7 @@ tags:
   - RAG
   - Normalization
 
-last_modified_at: 2018-01-10
+last_modified_at: 2026-08-22
 excerpt_separator: <!-- more -->
 ---
 
