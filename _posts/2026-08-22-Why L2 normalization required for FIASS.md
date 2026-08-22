@@ -21,6 +21,7 @@ There are two common ways to measure "how similar" two vectors are:
   <li> Cosine similarity — cares only about the direction the arrows point, ignoring length entirely
 </ol>
 <br>
+
 ## Why length can be a problem?
 
 Say you have two documents about "cats":
