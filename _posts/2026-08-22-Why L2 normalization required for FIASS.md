@@ -2,7 +2,7 @@
 layout: post
 title: "Optimization"
 categories:
-  - GENAI & Agents
+  - GenAI & Agents
 tags:
   - FAISS
   - Vector
