@@ -15,7 +15,7 @@ excerpt_separator: <!-- more -->
 
 Imagine every piece of text (a sentence, a document) gets turned into a vector — think of it as an arrow pointing in some direction in space, with a certain length.
 
-There are two common ways to measure "how similar" two vectors are:\
+There are two common ways to measure "how similar" two vectors are:
 <ol>
   <li> Inner product (dot product) — cares about both the direction the arrows point AND their length </li>
   <li> Cosine similarity — cares only about the direction the arrows point, ignoring length entirely </li>
