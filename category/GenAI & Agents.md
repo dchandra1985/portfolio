@@ -1,7 +1,5 @@
-\---
-
+---
 layout: category
 title: GenAI \& Agents
-google\_analytics: UA-126196456-1
+google_analytics: UA-126196456-1
 ---
-
