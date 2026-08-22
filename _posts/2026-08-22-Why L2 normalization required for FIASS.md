@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Optimization"
+title: "Why L2 Normalization required in Vector Search"
 categories:
   - GenAI & Agents
 tags:
