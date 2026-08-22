@@ -1,3 +1,18 @@
+---
+layout: post
+title: "Optimization"
+categories:
+  - GENAI & Agents
+tags:
+  - FAISS
+  - Vector
+  - RAG
+  - Normalization
+
+last_modified_at: 2018-01-10
+excerpt_separator: <!-- more -->
+---
+
 Imagine every piece of text (a sentence, a document) gets turned into a vector — think of it as an arrow pointing in some direction in space, with a certain length.
 
 There are two common ways to measure "how similar" two vectors are:
