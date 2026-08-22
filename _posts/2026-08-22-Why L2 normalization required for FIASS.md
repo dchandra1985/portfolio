@@ -20,9 +20,8 @@ There are two common ways to measure "how similar" two vectors are:
   <li> Inner product (dot product) — cares about both the direction the arrows point AND their length
   <li> Cosine similarity — cares only about the direction the arrows point, ignoring length entirely
 </ol>
-<br>
 
-## Why length can be a problem?
+<b> Why length can be a problem? </b>
 
 Say you have two documents about "cats":
 
@@ -31,7 +30,7 @@ Document B: long, mentions "cat" 50 times → produces a much longer vector (big
 
 If you use a plain inner product to compare these vectors to a query about "cats," the longer vector (Document B) tends to score higher — not necessarily because it's more relevant, but just because it's bigger. That's often not what you want. You usually care about "does this point in the same direction as my query," not "which vector is physically longer."
 
-## What L2 normalization does?
+<b> What L2 normalization does? </b>
 
 L2 normalization rescales every vector so its length becomes exactly 1, while keeping its direction unchanged.
 
@@ -40,7 +39,7 @@ After:  same direction (northeast), but length = 1.0
 
 Every vector — no matter how long or short it started — becomes the same length (1), so only its direction is left to compare.
 
-## Why that turns inner product into cosine similarity?
+<b> Why that turns inner product into cosine similarity? </b>
 
 Mathematically, cosine similarity is literally defined as:
 
@@ -54,7 +53,7 @@ cosine_similarity(A, B) = (A · B) / (1 × 1) = A · B
 
 In other words: once every vector has length 1, the plain inner product IS the cosine similarity — the division step becomes unnecessary because you divided by 1.
 
-## Why this matters for FAISS specifically?
+<b> Why this matters for FAISS specifically? </b>
 
 FAISS (the vector search library) has an index type called IndexFlatIP that's optimized to compute inner products fast — it's simple, fast math (just multiply and sum). FAISS doesn't have a separate "cosine similarity index" built in.
 
